@@ -1,2 +1,6 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<svg baseProfile="tiny" height="100%" version="1.2" width="100%" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink"><defs /><rect fill="#ffffff" height="100%" width="100%" x="0" y="0" /><text fill="none" font-family="Arial" font-size="40" font-weight="bold" stroke="#3DCFB6" stroke-width="2" x="10" y="40">V</text><text fill="none" font-family="Arial" font-size="40" font-weight="bold" stroke="#ffffff" stroke-width="2" x="30" y="40">anessa</text></svg>
+<svg width="200" height="50" xmlns="http://www.w3.org/2000/svg">
+  <rect width="200" height="50" fill="none" />
+  <text x="0" y="35" font-family="Arial" font-size="35" font-weight="bold" fill="#ffffff">
+    <tspan fill="none" stroke="#3DCFB6" stroke-width="2" dy="0">V</tspan>anessa
+  </text>
+</svg>
