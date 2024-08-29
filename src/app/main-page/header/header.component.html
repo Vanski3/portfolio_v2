@@ -1,35 +1,59 @@
 <section class="nav-bar">
-    <div class="lang-nav-wrapper">
-        <div class="lang-btn">
+  <!-- DESKTOP -->
+  <div class="logo-container">
+    <img
+      src="./../../../assets/img/header/vanessa_text_filled.svg"
+      alt="logo"
+      class="logo-full"
+    />
+    <img
+      src="./../../../assets/img/header/logo_v.svg"
+      alt="logo"
+      class="logo-v d-none"
+    />
+  </div>
+
+  <div class="lang-nav-wrapper">
+    <div class="lang-btn">
+      <a class="lang" (click)="selectLanguage('EN')" [class.active]="selectedLanguage === 'EN'">EN</a>
+      <a class="lang" (click)="selectLanguage('DE')" [class.active]="selectedLanguage === 'DE'">DE</a>
+      <a class="lang" (click)="selectLanguage('RU')" [class.active]="selectedLanguage === 'RU'">RU</a>
+      <div class="active-bg"></div>
+    </div>
+
+    <nav class="desktop-nav">
+      <a href="#about-me">About me</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+    </nav>
+  </div>
+
+  <!-- BURGER MENU ICON -->
+  <div class="burger-menu d-none">
+    <img src="./../../../assets/img/header/burger.svg" alt="burger-menu" (click)="toggleMenu()" />
+  </div>
+
+  <!-- MOBILE MENU -->
+  @if (menuOpen) {
+    <div class="mobile-menu" (click)="closeMenuOutside($event)">
+      <div class="menu-container">
+        <div class="menu-header">
+          <img src="./../../../assets/img/header/close_menu.svg" alt="close" (click)="toggleMenu()" />
+        </div>
+        <nav class="mobile-nav">
+          <a (click)="toggleMenu()">About me</a>
+          <a (click)="toggleMenu()">Skills</a>
+          <a (click)="toggleMenu()">Projects</a>
+        </nav>
+        <div class="lang-wrapper-mobile">
+          <div class="lang-btn small">
             <a class="lang" (click)="selectLanguage('EN')" [class.active]="selectedLanguage === 'EN'">EN</a>
             <a class="lang" (click)="selectLanguage('DE')" [class.active]="selectedLanguage === 'DE'">DE</a>
             <a class="lang" (click)="selectLanguage('RU')" [class.active]="selectedLanguage === 'RU'">RU</a>
             <div class="active-bg"></div>
           </div>
-          
-  
-      <nav>
-        <a>About me</a>
-        <a>Skills</a>
-        <a>Projects</a>
-      </nav>
+        </div>
+      </div>
     </div>
-  
-    <img
-      src="./../../../assets/img/header/vanessa_text_filled.svg"
-      alt="logo"
-      [class.d-none]="isHovered"
-      [class.d-block]="!isHovered"
-      (mouseenter)="onMouseEnter()"
-      (mouseleave)="onMouseLeave()"
-    />
-    <img
-      src="./../../../assets/img/header/vanessa_text_unfilled.svg"
-      alt="logo"
-      [class.d-none]="!isHovered"
-      [class.d-block]="isHovered"
-      (mouseenter)="onMouseEnter()"
-      (mouseleave)="onMouseLeave()"
-    />
-  </section>
-  
+  }
+</section>
