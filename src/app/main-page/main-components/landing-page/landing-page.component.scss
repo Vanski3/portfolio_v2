@@ -61,33 +61,87 @@ $accent-clr: #3dcfb6;
       }
     }
 
-    .scroll-down-wrapper {
+
+    .lines-icons-wrapper {
       display: flex;
       align-items: center;
-      flex-direction: column;
-      gap: 10px;
-      position: relative;
-      top: 133px;
-      right: 528px;
-
-      .left-line {
-        height: 150px;
-        width: 1px;
-        background-color: $accent-clr;
+      justify-content: space-between;
+      padding: 0 40px;
+      .left-line-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        .arrow-wrapper {
+          border: 1px solid $accent-clr;
+          border-radius: 50px;
+          img.scroll-arrow {
+            height: 100%;
+            animation: bounce 2s infinite;
+          }
+        }
+        .left-line {
+          height: 200px;
+          width: 1px;
+          background-color: $accent-clr;
+        }
       }
-
-      .img-border {
-        border: 1px solid $accent-clr;
-        border-radius: 50px;
-
-        img.scroll-arrow {
-          height: 100%;
-          animation: bounce 2s infinite;
+      .right-line-wrapper {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+        .email {
+          writing-mode: vertical-lr;
+          text-decoration: none;
+          color: #f5f5f5;
+          margin-right: 8px;
+        }
+        .icon-dot-wrapper {
+          position: relative;
+          display: flex;
+          align-items: center;
+        
+          .icon-green {
+            width: 32px;
+            height: 32px;
+            transition: fill 0.3s ease;
+          
+            path {
+              fill: #3DCFB6; // Default color
+            }
+          
+            &:hover path {
+              fill: #f5f5f5; // Hover color
+            }
+          }
+          }
+        
+          .dot {
+            width: 8px;
+            height: 8px;
+            background-color: $accent-clr;
+            border-radius: 50%;
+            opacity: 0;
+            margin-left: 5px;
+            transition: opacity 0.3s ease;
+          }
+        
+          &:hover .dot {
+            opacity: 1;
+          }
+        }
+        
+        .right-line {
+          height: 120px;
+          width: 1px;
+          background-color: #f5f5f5;
+          margin-right:10px;
         }
       }
     }
   }
-}
+
 
 // KEYFRAMES
 @keyframes slideOutIn {
