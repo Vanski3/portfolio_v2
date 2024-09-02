@@ -1,4 +1,5 @@
 $accent-clr: #3dcfb6;
+$bx-shdw: 0px 0px 41px 4px rgba(3, 218, 251, 0.15);
 
 .about-section {
     display: flex;
@@ -13,9 +14,7 @@ $accent-clr: #3dcfb6;
             height: 450px;
             width: 450px;
             border-radius: 15px;
-            -webkit-box-shadow: 0px 0px 41px 4px rgba(3, 218, 251, 0.15);
-            -moz-box-shadow: 0px 0px 41px 4px rgba(3, 218, 251, 0.15);
-            box-shadow: 0px 0px 41px 4px rgba(3, 218, 251, 0.15);
+            box-shadow: $bx-shdw;
         }
 
         .hover-image {
@@ -51,9 +50,7 @@ $accent-clr: #3dcfb6;
             padding: 20px;
             width: 400px;
             height: 400px;
-            -webkit-box-shadow: 0px 0px 41px 4px rgba(3, 218, 251, 0.15);
-            -moz-box-shadow: 0px 0px 41px 4px rgba(3, 218, 251, 0.15);
-            box-shadow: 0px 0px 41px 4px rgba(3, 218, 251, 0.15);
+            box-shadow: $bx-shdw;
 
             h2 {
                 margin-top: 0;
@@ -64,7 +61,7 @@ $accent-clr: #3dcfb6;
             }
 
             p {
-                font-family: 'Klara';
+                font-family: 'Karla';
             }
         }
     }
