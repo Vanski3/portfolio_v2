@@ -1,1 +1,101 @@
-<p>portfolio works!</p>
+<section class="portfolio">
+    <h3>Portfolio</h3>
+    <h2>Featured Projects</h2>
+    <p class="subline">Explore a selection of my work here - Interact with projects to see my skills in action.</p>
+
+
+    <!-- test section start -->
+    <div class="project-wrapper">
+        <div class="separator"></div>
+
+        <div class="project">
+            <div class="project-info">
+                <h4>Join</h4>
+                <div class="tech">
+                    <p>HTML</p><span> | </span>
+                    <p>CSS </p><span> | </span>
+                    <p>JavaScipt</p> <span> | </span>
+                    <p>Firebase</p>
+                </div>
+            </div>
+            <div class="img-wrapper">
+                <img class="preview-img" src="./../../../../assets/img/portfolio/join.png" alt="join preview">
+                <img class="hover-img" src="./../../../../assets/img/about-me/hover-img.svg" alt="">
+            </div>
+        </div>
+
+        <div class="separator"></div>
+
+        <div class="project">
+            <div class="project-info">
+                <h4>El Pollo Loco</h4>
+                <div class="tech">
+                    <p>HTML</p><span> | </span>
+                    <p>CSS </p><span> | </span>
+                    <p>JavaScipt</p>
+                </div>
+            </div>
+            <div class="img-wrapper">
+                <img class="preview-img" src="./../../../../assets/img/portfolio/elp.png" alt="El Pollo Loco preview">
+                <img class="hover-img" src="./../../../../assets/img/about-me/hover-img.svg" alt="">
+            </div>
+        </div>
+
+        <div class="separator"></div>
+    </div>
+</section>
+
+<!-- end -->
+
+
+
+
+
+
+
+
+
+<!--   
+    <div class="projects">
+      @for ( project of projects; track project) {
+        <div 
+          class="project" 
+          [class.active]="project === selectedProject"
+          (mouseover)="hoverProject(project)"
+          (click)="openProject(project)"
+        >
+          <div class="project-info">
+            <h3>{{ project.name }}</h3>
+            <p>
+              @for (technologies of projects; track technologies) {
+                {{ project.technologies}}
+                @if (project.technologies.length - 1) {
+                  <span> | </span>
+                }
+              }
+            </p>
+          </div>
+         </div>
+        <img [src]="project.image" alt="{{ project.name }}" />
+      }
+    </div> -->
+
+<!-- @if (isDialogOpen) {
+      <div class="project-dialog">
+        <div class="dialog-content">
+          <img class="close-btn" src="./../../../../assets/img/portfolio/close-btn.svg" (click)="closeDialog()" alt="Close">
+          <h2>{{ selectedProject.name }}</h2>
+          <p>{{ selectedProject.description }}</p>
+          <img [src]="selectedProject.image" alt="{{ selectedProject.name }}" />
+          <div class="technologies">
+            @for (tech of selectedProject.technologies; track tech) {
+              <span>{{ tech }}</span>
+            }
+          </div>
+          <div class="dialog-actions">
+            <button (click)="nextProject()">Next Project</button>
+          </div>
+        </div>
+      </div>
+    } -->
+<!-- </section> -->
