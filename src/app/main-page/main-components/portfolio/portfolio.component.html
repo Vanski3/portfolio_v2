@@ -1,51 +1,78 @@
 <section class="portfolio">
     <h3>Portfolio</h3>
     <h2>Featured Projects</h2>
-    <p class="subline">Explore a selection of my work here - Interact with projects to see my skills in action.</p>
-
-
-    <!-- test section start -->
+    <p class="subline">
+      Explore a selection of my work here - Interact with projects to see my skills in action.
+    </p>
+  
     <div class="project-wrapper">
         <div class="separator"></div>
-
-        <div class="project">
+    
+        @for ( project of projects; track project) {
+          <div class="project" (click)="openProject(project)">
             <div class="project-info">
-                <h4>Join</h4>
-                <div class="tech">
-                    <p>HTML</p><span> | </span>
-                    <p>CSS </p><span> | </span>
-                    <p>JavaScipt</p> <span> | </span>
-                    <p>Firebase</p>
-                </div>
+              <h4>{{ project.name }}</h4>
+              <div class="tech">
+                @for ( tech of project.technologies; track tech) {
+                  <p>{{ tech.name }}</p><span> | </span>
+                }
+              </div>
             </div>
             <div class="img-wrapper">
-                <img class="preview-img" src="./../../../../assets/img/portfolio/join.png" alt="join preview">
-                <img class="hover-img" src="./../../../../assets/img/about-me/hover-img.svg" alt="">
+              <img class="preview-img" [src]="project.image" alt="{{ project.name }} preview" />
+              <img class="hover-img" src="./../../../../assets/img/about-me/hover-img.svg" alt="" />
             </div>
-        </div>
+          </div>
+    
+          <div class="separator"></div>
+        }
+      </div>
+    
+   
+    @if (isDialogOpen) {
+        <div class="project-dialog">
+            <div class="dialog-content">
 
-        <div class="separator"></div>
+                <div class="left-section">
+                    <h1>{{ selectedProject.index }}</h1>
+                    <h2>{{ selectedProject.name }}</h2>
+                    <h3>What is this project about?</h3>
+                    <p>{{ selectedProject.description }}</p>
 
-        <div class="project">
-            <div class="project-info">
-                <h4>El Pollo Loco</h4>
-                <div class="tech">
-                    <p>HTML</p><span> | </span>
-                    <p>CSS </p><span> | </span>
-                    <p>JavaScipt</p>
+                    <div class="tech-stack">
+                        @for ( tech of selectedProject.technologies; track tech) {
+                            <div class="tech-item">
+                                <img [src]="tech.icon" alt="{{ tech.name }} icon" />
+                                <span>{{ tech.name }}</span>
+                            </div>
+                        }
+                    </div>
+
+                    <div class="buttons">
+                        @for (link of selectedProject.links; track link) {
+                            <a href="{{ link.url }}" target="_blank">{{ link.name }} ↗</a>
+                        }
+                    </div>
                 </div>
-            </div>
-            <div class="img-wrapper">
-                <img class="preview-img" src="./../../../../assets/img/portfolio/elp.png" alt="El Pollo Loco preview">
-                <img class="hover-img" src="./../../../../assets/img/about-me/hover-img.svg" alt="">
+    
+                <div class="right-section">
+                    <img [src]="selectedProject.image" alt="{{ selectedProject.name }} preview" />
+                </div>
+    
+                <img class="close-btn" src="./../../../../assets/img/portfolio/close-btn.svg" (click)="closeDialog()" alt="Close" />
+    
+                <button class="next-project-btn" (click)="nextProject()">
+                    Next project 
+                    <span class="arrow-icon">
+                        <img class="arrows-thin" src="./../../../../assets/img/portfolio/arrows-thin.svg" alt="">
+                        <img class="arrows-thick" src="./../../../../assets/img/portfolio/arrows-thick.svg" alt="">
+                    </span>
+                </button>
             </div>
         </div>
-
-        <div class="separator"></div>
-    </div>
+    }
 </section>
 
-<!-- end -->
 
 
 
@@ -55,47 +82,3 @@
 
 
 
-<!--   
-    <div class="projects">
-      @for ( project of projects; track project) {
-        <div 
-          class="project" 
-          [class.active]="project === selectedProject"
-          (mouseover)="hoverProject(project)"
-          (click)="openProject(project)"
-        >
-          <div class="project-info">
-            <h3>{{ project.name }}</h3>
-            <p>
-              @for (technologies of projects; track technologies) {
-                {{ project.technologies}}
-                @if (project.technologies.length - 1) {
-                  <span> | </span>
-                }
-              }
-            </p>
-          </div>
-         </div>
-        <img [src]="project.image" alt="{{ project.name }}" />
-      }
-    </div> -->
-
-<!-- @if (isDialogOpen) {
-      <div class="project-dialog">
-        <div class="dialog-content">
-          <img class="close-btn" src="./../../../../assets/img/portfolio/close-btn.svg" (click)="closeDialog()" alt="Close">
-          <h2>{{ selectedProject.name }}</h2>
-          <p>{{ selectedProject.description }}</p>
-          <img [src]="selectedProject.image" alt="{{ selectedProject.name }}" />
-          <div class="technologies">
-            @for (tech of selectedProject.technologies; track tech) {
-              <span>{{ tech }}</span>
-            }
-          </div>
-          <div class="dialog-actions">
-            <button (click)="nextProject()">Next Project</button>
-          </div>
-        </div>
-      </div>
-    } -->
-<!-- </section> -->
