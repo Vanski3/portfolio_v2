@@ -1,9 +1,12 @@
 <section class="portfolio">
-    <h3>Portfolio</h3>
-    <h2>Featured Projects</h2>
-    <p class="subline">
-      Explore a selection of my work here - Interact with projects to see my skills in action.
-    </p>
+    <div class="headline-wrapper">
+        <h3>Portfolio</h3>
+        <h2>Featured Projects</h2>
+        <p class="subline">
+          Explore a selection of my work here - Interact with projects to see my skills in action.
+        </p>
+    </div>
+   
   
     <div class="project-wrapper">
         <div class="separator"></div>
@@ -14,7 +17,11 @@
               <h4>{{ project.name }}</h4>
               <div class="tech">
                 @for ( tech of project.technologies; track tech) {
-                  <p>{{ tech.name }}</p><span> | </span>
+                  <p>{{ tech.name }}</p>
+                  @if (!$last) {
+                    <!-- vertical separator -->
+                    <span></span> 
+                  }
                 }
               </div>
             </div>
@@ -34,8 +41,11 @@
             <div class="dialog-content">
 
                 <div class="left-section">
-                    <h1>{{ selectedProject.index }}</h1>
-                    <h2>{{ selectedProject.name }}</h2>
+                    <div class="headlines">
+                        <h1>{{ selectedProject.index }}</h1>
+                        <h2>{{ selectedProject.name }}</h2>
+                    </div>
+                    
                     <h3>What is this project about?</h3>
                     <p>{{ selectedProject.description }}</p>
 
