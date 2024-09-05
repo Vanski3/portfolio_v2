@@ -1,1 +1,35 @@
-<p>references works!</p>
+<div class="custom-reference-container">
+    <section class="custom-reference">
+      <h1>What my colleagues say about me</h1>
+  
+      <section class="splide" aria-label="Custom Splide Example">
+        <div class="splide__track">
+          <ul class="splide__list">
+            @for(ref of references; track ref) {
+              <li class="splide__slide">
+                <p>{{ ref.text }}</p>
+                <span>
+                  <div></div>
+                  <span>{{ ref.name }} - {{ ref.jobTitle }}</span>
+                </span>
+              </li>
+            }
+          </ul>
+        </div>
+      </section>
+  
+      <!-- Custom Navigation Arrows and Pagination on the same line -->
+      <div class="custom-navigation">
+        <button class="custom-arrow custom-arrow--prev">
+          <img src="./../../../../assets/img/ref/arrow-left.svg" alt="Previous">
+        </button>
+        
+        <ul class="splide__pagination"></ul>
+  
+        <button class="custom-arrow custom-arrow--next">
+          <img src="./../../../../assets/img/ref/arrows-right.svg" alt="Next">
+        </button>
+      </div>
+    </section>
+  </div>
+  
