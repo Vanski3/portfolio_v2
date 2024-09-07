@@ -3,13 +3,14 @@ import { gsap } from 'gsap';
 import { TextPlugin } from 'gsap/TextPlugin';
 
 import { HeaderComponent } from '../../header/header.component';
+import { CommonModule } from '@angular/common';
 
 gsap.registerPlugin(TextPlugin);
 
 @Component({
   selector: 'app-landing-page',
   standalone: true,
-  imports: [HeaderComponent],
+  imports: [HeaderComponent, CommonModule],
   templateUrl: './landing-page.component.html',
   styleUrl: './landing-page.component.scss',
 })

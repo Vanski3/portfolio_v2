@@ -1,19 +1,19 @@
 $accent-clr: #3dcfb6;
 $bx-shdw: 0px 0px 41px 4px rgba(3, 218, 251, 0.15);
-$ft-color: #f5f5f5;
+$font-color: #f5f5f5;
 $fira-ft: 'Fira Code';
 $karla-ft: 'Karla';
 
 .contact-section {
   display: flex;
   justify-content: space-between;
-  padding: 2rem;
+  padding: 70px;
   margin: 0 auto;
 
   .left {
     flex: 1;
     padding-right: 32px;
-    color: $ft-color;
+    color: $font-color;
 
     h3 {
       font-size: 1.5rem;
@@ -72,10 +72,10 @@ $karla-ft: 'Karla';
           background: none;
           border: none;
           border-bottom: 1px solid $accent-clr;
-          color: $ft-color;
+          color: $font-color;
           font-size: 1rem;
 
-          &::placeholder{
+          &::placeholder {
             font-family: $karla-ft;
           }
         }
@@ -108,9 +108,10 @@ $karla-ft: 'Karla';
         }
 
         label {
-          color: $ft-color;
+          color: $font-color;
           font-size: 1rem;
           cursor: pointer;
+
           img {
             width: 20px;
             height: 20px;
@@ -122,27 +123,41 @@ $karla-ft: 'Karla';
             text-decoration: none;
 
             &:hover {
-              color: white;
+              color: $font-color;
             }
           }
         }
       }
 
       button {
-        background: none;
-        border: 1px solid white;
-        color: white;
-        padding: 0.75rem 1.5rem;
-        border-radius: 25px;
-        font-size: 1rem;
+        text-decoration: none;
+        background-color: transparent;
+        color: $font-color;
+        border: 1px solid $font-color;
+        padding: 10px 20px;
+        border-radius: 30px;
+        overflow: hidden;
+        display: inline-block;
+        position: relative;
+        transition: all ease 200ms;
         cursor: pointer;
-        transition: all 0.3s ease;
-
-        &:hover {
-          background: $accent-clr;
-          color: black;
+      
+        span {
+          display: inline-block;
+          animation: none; 
         }
-
+      
+        &:hover {
+          color: $accent-clr;
+          border: 1px solid $accent-clr;
+      
+          span {
+            display: inline-block;
+            animation: slideOutIn 500ms forwards;
+            transition: transform 1s ease, opacity 1s ease;
+          }
+        }
+      
         &:disabled {
           cursor: not-allowed;
           opacity: 0.5;
@@ -154,11 +169,31 @@ $karla-ft: 'Karla';
   .unchecked-checkbox {
     display: block;
   }
-  
+
   .checked-checkbox {
     display: none;
   }
 
+  // KEYFRAMES
+  @keyframes slideOutIn {
+    0% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    50% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    51% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  // RESPONSIVE
   @media (max-width: 768px) {
     flex-direction: column;
     text-align: center;

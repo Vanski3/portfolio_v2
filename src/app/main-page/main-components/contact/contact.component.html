@@ -24,10 +24,9 @@
 
         <div class="form-group" [ngClass]="{'error': isInvalid('message')}">
           <label for="message">How can I help you?</label>
-          <textarea id="message" formControlName="message" placeholder="Hello Lukas, I am interested in..."></textarea>
+          <textarea id="message" formControlName="message" placeholder="Hello Vanessa, I am interested in..."></textarea>
           <div class="error-message" *ngIf="isInvalid('message')">What do you need to develop?</div>
         </div>
-  
        
         <div class="form-check">
           <label for="privacy">
@@ -39,7 +38,7 @@
         </div>
   
       
-        <button type="submit" [disabled]="!isCheckedVisible()">Say Hello</button>
+        <button type="submit" [disabled]="!isCheckedVisible()"><span>Say Hello</span></button>
       </form>
     </div>
   </section>
