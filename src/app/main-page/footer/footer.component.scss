@@ -33,10 +33,10 @@ footer {
         &::after {
             content: "";
             position: absolute;
-            bottom: 7px;
-            left: -18%;
+            bottom: 10px;
+            left: -22%;
             width: 6px;
-            height: 6px;
+            aspect-ratio: 1;
             background-color: $accent-clr;
             border-radius: 50%;
             opacity: 0;

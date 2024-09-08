@@ -43,35 +43,30 @@ $karla-ft: 'Karla';
           display: flex;
           gap: 45px;
 
-          button {
+          a {
             text-decoration: none;
-            color: $ft-clr;
-            border: 1px solid $ft-clr;
+            color: #f5f5f5;
+            border: 1px solid #f5f5f5;
             padding: 10px 20px;
             border-radius: 30px;
             overflow: hidden;
             display: inline-block;
             position: relative;
             transition: all ease 200ms;
+            font-family: 'Karla';
             cursor: pointer;
-            background: none;
-
-            a {
-              text-decoration: none;
-              color: inherit;
-              display: block;
-            }
 
             &:hover {
-              color: $accent-clr;
-              border: 1px solid $accent-clr;
+                color: $accent-clr;
+                border: 1px solid $accent-clr;
 
-              span {
-                animation: slideOutIn 500ms forwards;
-                transition: transform 1s ease, opacity 1s ease;
-              }
+                span {
+                    display: inline-block;
+                    animation: slideOutIn 500ms forwards;
+                    transition: transform 1s ease, opacity 1s ease;
+                }
             }
-          }
+        }
         }
       }
 
@@ -82,6 +77,7 @@ $karla-ft: 'Karla';
         padding: 0 50px;
         position: relative;
         bottom: 250px;
+        pointer-events: none;
 
         .left-line-wrapper {
           display: flex;
@@ -116,6 +112,7 @@ $karla-ft: 'Karla';
           align-items: center;
           flex-direction: column;
           gap: 20px;
+          pointer-events: all;
 
           .empty2 {
             height: 220px;
@@ -226,13 +223,16 @@ $karla-ft: 'Karla';
     transform: translateX(0);
     opacity: 1;
   }
+
   50% {
     transform: translateX(-100%);
     opacity: 0;
   }
+
   51% {
     transform: translateX(100%);
   }
+
   100% {
     transform: translateX(0);
     opacity: 1;
@@ -240,6 +240,7 @@ $karla-ft: 'Karla';
 }
 
 @keyframes bounce {
+
   0%,
   20%,
   50%,
@@ -247,9 +248,11 @@ $karla-ft: 'Karla';
   100% {
     transform: translateY(0);
   }
+
   40% {
     transform: translateY(-10px);
   }
+
   60% {
     transform: translateY(-5px);
   }
@@ -259,6 +262,7 @@ $karla-ft: 'Karla';
   0% {
     transform: translateX(10%);
   }
+
   100% {
     transform: translateX(-100%);
   }
@@ -270,6 +274,7 @@ $karla-ft: 'Karla';
     0% {
       transform: translateX(1458px);
     }
+
     100% {
       transform: translateX(-1458px);
     }

@@ -11,19 +11,19 @@
     <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
       <div class="form-group" [ngClass]="{'error': isInvalid('name')}">
         <label for="name">What's your name?</label>
-        <input type="text" id="name" formControlName="name" placeholder="Your name goes here" />
+        <input type="text" id="name" formControlName="name" placeholder="Your name goes here" required />
         <div class="error-message" *ngIf="isInvalid('name')">Oops! It seems your name is missing</div>
       </div>
 
       <div class="form-group" [ngClass]="{'error': isInvalid('email')}">
         <label for="email">What's your email?</label>
-        <input type="email" id="email" formControlName="email" placeholder="youremail@email.com" />
+        <input type="email" id="email" formControlName="email" placeholder="youremail@email.com" required/>
         <div class="error-message" *ngIf="isInvalid('email')">Hoppala! Your email is required</div>
       </div>
 
       <div class="form-group" [ngClass]="{'error': isInvalid('message')}">
         <label for="message">How can I help you?</label>
-        <textarea id="message" formControlName="message" placeholder="Hello Vanessa, I am interested in..."></textarea>
+        <textarea id="message" formControlName="message" placeholder="Hello Vanessa, I am interested in..." required></textarea>
         <div class="error-message" *ngIf="isInvalid('message')">What do you need to develop?</div>
       </div>
 
@@ -32,7 +32,7 @@
           <img src="./../../../../assets/img/contact/unchecked.svg" class="unchecked-checkbox" alt="Unchecked" />
           <img src="./../../../../assets/img/contact/checked2.svg" class="checked-checkbox" alt="Checked" style="display: none;" />
         </label>
-        <input type="checkbox" id="privacy" formControlName="privacy" (click)="toggleDisplay()" style="visibility: hidden; position: absolute;" />
+        <input type="checkbox" id="privacy" formControlName="privacy" (click)="toggleDisplay()" style="visibility: hidden; position: absolute;" required/>
         <label for="privacy">I've read the <a class="privacy-highlight" href="#">privacy policy</a> and agree to the processing of my data as outlined.</label>
       </div>
 

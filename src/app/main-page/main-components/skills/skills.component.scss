@@ -79,21 +79,21 @@ $bx-shdw: 0px 0px 41px 4px rgba(3, 218, 251, 0.15);
        display: flex;
        align-items: center;
        justify-content: center;
-       padding-top: 100px;
+       padding-top: 137px;
        font-family: 'Fira Code';
 
         .icon-section-wrapper{
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             grid-template-rows: repeat(4, 1fr);
-            grid-column-gap: 60px;
-            grid-row-gap: 40px;
+            grid-column-gap: 45px;
+            grid-row-gap: 30px;
         }
 
         .icon-wrapper{
             display: flex;
             align-items: center;
-            justify-content: center;
+            justify-content: start;
             flex-direction: column;
 
             .icon{

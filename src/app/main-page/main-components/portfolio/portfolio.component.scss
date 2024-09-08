@@ -411,9 +411,8 @@ $ft-clr: #f5f5f5;
         .subline {
             margin-bottom: 30px !important;
         }
-        .project {
-            display: flex;
-            flex-direction: column !important;
+        .project-info {
+            flex-direction: column ;
             padding: 15px !important;
             h4 {
                 font-size: 1.2rem !important;

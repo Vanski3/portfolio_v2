@@ -51,6 +51,7 @@ export class ContactComponent {
       console.log('Form submitted:', this.contactForm.value);
     } else {
       this.contactForm.markAllAsTouched();
+      console.log('hihi');
     }
   }
 }
