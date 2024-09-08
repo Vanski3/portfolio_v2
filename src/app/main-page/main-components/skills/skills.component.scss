@@ -98,6 +98,8 @@ $bx-shdw: 0px 0px 41px 4px rgba(3, 218, 251, 0.15);
 
             .icon{
                 transition: all 0.3s ease;
+                height: 50px;
+                width: 50px;
                 &:hover{
                     scale: 1.1;
                 }
@@ -149,3 +151,54 @@ $bx-shdw: 0px 0px 41px 4px rgba(3, 218, 251, 0.15);
         align-items: center;
     }
 }
+
+@media (max-width: 530px){
+
+    .icon-wrapper{
+        font-size: 0.9rem;
+    }
+    .icon{
+        height: 40px !important;
+        width: 40px !important;
+    }
+   
+}
+
+@media (max-width: 490px){
+
+    .skills{
+        width: 350px !important;
+        height: 530px !important;
+        font-size: 0.9rem;
+    }
+
+    .icon{
+        height: 30px !important;
+        width: 30px !important;
+    }
+   
+}
+
+@media (max-width: 475px){
+    .skills{
+        width: 300px !important;
+        justify-content: center;
+    }
+
+    .icon-section-wrapper{
+        grid-template-columns: repeat(3, 1fr) !important;
+    }
+   
+}
+
+@media (max-width: 400px){
+
+
+
+    .skills{
+        width: 235px !important;
+        height: 628px !important;
+    }
+   
+}
+
