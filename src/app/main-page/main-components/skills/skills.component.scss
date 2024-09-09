@@ -27,7 +27,6 @@ $bx-shdw: 0px 0px 41px 4px rgba(3, 218, 251, 0.15);
             border-radius: 20px;
             padding: 20px;
             width: 400px;
-            height: 520px;
             box-shadow: $bx-shdw;
 
             h2 {
@@ -168,7 +167,6 @@ $bx-shdw: 0px 0px 41px 4px rgba(3, 218, 251, 0.15);
 
     .skills{
         width: 350px !important;
-        height: 530px !important;
         font-size: 0.9rem;
     }
 
@@ -188,17 +186,32 @@ $bx-shdw: 0px 0px 41px 4px rgba(3, 218, 251, 0.15);
     .icon-section-wrapper{
         grid-template-columns: repeat(3, 1fr) !important;
     }
+
+    .icon-wrapper{
+        padding-left: 5px !important;
+        grid-column-gap: 30px !important;
+    }
    
 }
 
 @media (max-width: 400px){
 
-
-
     .skills{
         width: 235px !important;
-        height: 628px !important;
     }
    
+}
+
+@media (max-width: 360px){
+.icon-section-wrapper{
+    grid-column-gap: 20px !important;
+}
+    .icon-wrapper{
+        font-size: 0.8rem;
+    }
+    .icon{
+        height: 30px !important;
+        width: 30px !important;
+    }   
 }
 

@@ -43,6 +43,7 @@ $karla-ft: 'Karla';
       a {
         color: $accent-clr;
         text-decoration: none;
+
         &:hover {
           color: white;
         }
@@ -56,13 +57,13 @@ $karla-ft: 'Karla';
     form {
       .form-group {
         margin-bottom: 1.5rem;
-        position: relative; 
+        position: relative;
 
         input,
         textarea {
           width: 100%;
           padding: 0.5rem;
-          padding-right: 40px; 
+          padding-right: 40px;
           background: #1c1c1c;
           border: none;
           border-bottom: 1px solid $accent-clr;
@@ -175,13 +176,16 @@ $karla-ft: 'Karla';
       transform: translateX(0);
       opacity: 1;
     }
+
     50% {
       transform: translateX(-100%);
       opacity: 0;
     }
+
     51% {
       transform: translateX(100%);
     }
+
     100% {
       transform: translateX(0);
       opacity: 1;
@@ -201,10 +205,16 @@ $karla-ft: 'Karla';
 
     .right {
       form {
+
         .form-group,
         .form-check {
           text-align: left;
         }
+
+        input,
+          textarea {
+            width: 90% !important;
+          }
       }
     }
   }
@@ -235,7 +245,7 @@ $karla-ft: 'Karla';
           input,
           textarea {
             font-size: 0.8rem !important;
-            width: 280px;
+            width: 70% !important;
           }
         }
 
@@ -252,6 +262,7 @@ $karla-ft: 'Karla';
       }
     }
   }
+
 
   @media (max-width: 320px) {
     padding: 20px;
@@ -279,7 +290,7 @@ $karla-ft: 'Karla';
           input,
           textarea {
             font-size: 0.7rem !important;
-            width: 250px;
+            // width: 215px !important;
           }
         }
 
