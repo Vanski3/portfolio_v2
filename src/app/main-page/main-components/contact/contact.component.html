@@ -9,34 +9,107 @@
 
   <div class="right">
     <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
-      <div class="form-group" [ngClass]="{'error': isInvalid('name')}">
+      <!-- Name Input -->
+      <div class="form-group required" [ngClass]="{'error': isInvalid('name'), 'success': isValid('name')}">
         <label for="name">What's your name?</label>
-        <input type="text" id="name" formControlName="name" placeholder="Your name goes here" required />
-        <div class="error-message" *ngIf="isInvalid('name')">Oops! It seems your name is missing</div>
-      </div>
-
-      <div class="form-group" [ngClass]="{'error': isInvalid('email')}">
-        <label for="email">What's your email?</label>
-        <input type="email" id="email" formControlName="email" placeholder="youremail@email.com" required/>
-        <div class="error-message" *ngIf="isInvalid('email')">Hoppala! Your email is required</div>
-      </div>
-
-      <div class="form-group" [ngClass]="{'error': isInvalid('message')}">
-        <label for="message">How can I help you?</label>
-        <textarea id="message" formControlName="message" placeholder="Hello Vanessa, I am interested in..." required></textarea>
-        <div class="error-message" *ngIf="isInvalid('message')">What do you need to develop?</div>
-      </div>
-
-      <div class="form-check">
-        <label for="privacy">
-          <img src="./../../../../assets/img/contact/unchecked.svg" class="unchecked-checkbox" alt="Unchecked" />
-          <img src="./../../../../assets/img/contact/checked2.svg" class="checked-checkbox" alt="Checked" style="display: none;" />
+        <input
+          type="text"
+          id="name"
+          formControlName="name"
+          placeholder="Your name goes here"
+          required
+        />
+        <!-- Error/Success Icons -->
+        <label *ngIf="isInvalid('name')" for="name">
+          <img class="form-icon" src="./../../../../assets/img/contact/error.png" alt="Error" />
         </label>
-        <input type="checkbox" id="privacy" formControlName="privacy" (click)="toggleDisplay()" style="visibility: hidden; position: absolute;" required/>
-        <label for="privacy">I've read the <a class="privacy-highlight" href="#">privacy policy</a> and agree to the processing of my data as outlined.</label>
+        <label *ngIf="isValid('name')" for="name">
+          <img class="form-icon" src="./../../../../assets/img/contact/success.png" alt="Success" />
+        </label>
+        <!-- Error Message -->
+        <div class="error-message" *ngIf="isInvalid('name')">
+          Oops! It seems your name is missing
+        </div>
       </div>
 
-      <button type="submit" [disabled]="!isCheckedVisible()"><span>Say Hello</span></button>
+      <!-- Email Input -->
+      <div class="form-group required" [ngClass]="{'error': isInvalid('email'), 'success': isValid('email')}">
+        <label for="email">What's your email?</label>
+        <input
+          type="email"
+          id="email"
+          formControlName="email"
+          placeholder="youremail@email.com"
+          required
+        />
+        <!-- Error/Success Icons -->
+        <label *ngIf="isInvalid('email')" for="email">
+          <img class="form-icon" src="./../../../../assets/img/contact/error.png" alt="Error" />
+        </label>
+        <label *ngIf="isValid('email')" for="email">
+          <img class="form-icon" src="./../../../../assets/img/contact/success.png" alt="Success" />
+        </label>
+        <!-- Error Message -->
+        <div class="error-message" *ngIf="isInvalid('email')">
+          Hoppala! Your email is required
+        </div>
+      </div>
+
+      <!-- Message Input -->
+      <div class="form-group required" [ngClass]="{'error': isInvalid('message'), 'success': isValid('message')}">
+        <label for="message">How can I help you?</label>
+        <textarea
+          id="message"
+          formControlName="message"
+          placeholder="Hello Vanessa, I am interested in..."
+          required
+        ></textarea>
+        <!-- Error/Success Icons -->
+        <label *ngIf="isInvalid('message')" for="message">
+          <img class="form-icon" src="./../../../../assets/img/contact/error.png" alt="Error" />
+        </label>
+        <label *ngIf="isValid('message')" for="message">
+          <img class="form-icon" src="./../../../../assets/img/contact/success.png" alt="Success" />
+        </label>
+        <!-- Error Message -->
+        <div class="error-message" *ngIf="isInvalid('message')">
+          What do you need to develop?
+        </div>
+      </div>
+
+      <!-- Privacy Checkbox -->
+      <div class="form-check" [ngClass]="{'error': isInvalid('privacy')}">
+        <label for="privacy">
+          <img src="./../../../../assets/img/contact/unchecked.svg" class="unchecked-checkbox" alt="Unchecked"
+               [ngStyle]="{'display': contactForm.get('privacy')?.value ? 'none' : 'block'}" />
+          <img src="./../../../../assets/img/contact/checked2.svg" class="checked-checkbox" alt="Checked"
+               [ngStyle]="{'display': contactForm.get('privacy')?.value ? 'block' : 'none'}" />
+        </label>
+        <input
+          type="checkbox"
+          id="privacy"
+          formControlName="privacy"
+          style="visibility: hidden; position: absolute;"
+          required
+        />
+        <label for="privacy">
+          I've read the <a class="privacy-highlight" href="#">privacy policy</a> and agree to the processing of my data as outlined.
+        </label>
+        <!-- Error Message -->
+        <div class="error-message" *ngIf="isInvalid('privacy')">
+          You need to accept the privacy policy.
+        </div>
+      </div>
+
+      <!-- Submit Button -->
+      <button type="submit" [disabled]="!contactForm.valid">
+        <span>Say Hello</span>
+      </button>
     </form>
   </div>
+</section>
+
+<!-- Success Message -->
+<section *ngIf="messageSent">
+  Thank you! Your message has been sent.
 </section>

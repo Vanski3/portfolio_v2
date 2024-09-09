@@ -56,21 +56,14 @@ $karla-ft: 'Karla';
     form {
       .form-group {
         margin-bottom: 1.5rem;
-        position: relative;
-
-        label {
-          display: block;
-          font-size: 1.25rem;
-          color: $accent-clr;
-          margin-bottom: 8px;
-          font-family: $fira-ft;
-        }
+        position: relative; 
 
         input,
         textarea {
           width: 100%;
           padding: 0.5rem;
-          background: none;
+          padding-right: 40px; 
+          background: #1c1c1c;
           border: none;
           border-bottom: 1px solid $accent-clr;
           color: $font-color;
@@ -84,6 +77,15 @@ $karla-ft: 'Karla';
         textarea {
           height: 100px;
           resize: none;
+        }
+
+        label img.form-icon {
+          position: absolute;
+          right: -38px;
+          top: 67%;
+          transform: translateY(-50%);
+          width: 24px;
+          height: 24px;
         }
 
         &.error input,
@@ -142,37 +144,29 @@ $karla-ft: 'Karla';
         position: relative;
         transition: all ease 200ms;
         cursor: pointer;
-      
+
         span {
           display: inline-block;
-          animation: none; 
+          animation: none;
         }
-      
+
         &:hover {
           color: $accent-clr;
           border: 1px solid $accent-clr;
-      
+
           span {
             display: inline-block;
             animation: slideOutIn 500ms forwards;
             transition: transform 1s ease, opacity 1s ease;
           }
         }
-      
+
         &:disabled {
           cursor: not-allowed;
           opacity: 0.5;
         }
       }
     }
-  }
-
-  .unchecked-checkbox {
-    display: block;
-  }
-
-  .checked-checkbox {
-    display: none;
   }
 
   // KEYFRAMES

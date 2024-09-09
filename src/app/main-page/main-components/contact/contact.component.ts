@@ -1,18 +1,20 @@
-import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
+import { HttpClient, HttpClientModule } from '@angular/common/http'; 
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [ReactiveFormsModule, CommonModule],
+  imports: [CommonModule, ReactiveFormsModule, HttpClientModule], 
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.scss'],
 })
 export class ContactComponent {
   contactForm: FormGroup;
+  messageSent = false;
 
-  constructor(private fb: FormBuilder) {
+  constructor(private fb: FormBuilder, private http: HttpClient) {
     this.contactForm = this.fb.group({
       name: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
@@ -26,32 +28,40 @@ export class ContactComponent {
     return !!control && control.invalid && control.touched;
   }
 
-  toggleDisplay() {
-    const unchecked = document.querySelector('.unchecked-checkbox') as HTMLElement;
-    const checked = document.querySelector('.checked-checkbox') as HTMLElement;
-    const isChecked = this.contactForm.get('privacy')?.value;
-
-    
-    if (isChecked) {
-      unchecked.style.display = 'none';
-      checked.style.display = 'block';
-    } else {
-      unchecked.style.display = 'block';
-      checked.style.display = 'none';
-    }
+  isValid(controlName: string): boolean {
+    const control = this.contactForm.get(controlName);
+    return !!control && control.valid && control.touched;
   }
 
-  isCheckedVisible(): boolean {
-    const checked = document.querySelector('.checked-checkbox') as HTMLElement;
-    return checked?.style.display === 'block';
+  toggleDisplay() {
+    const privacyControl = this.contactForm.get('privacy');
+    if (privacyControl) {
+      privacyControl.markAsTouched(); 
+    }
   }
 
   onSubmit() {
     if (this.contactForm.valid) {
-      console.log('Form submitted:', this.contactForm.value);
+      const formData = this.contactForm.value;
+
+      this.http.post('https://vanessa-sachs.com/sendMail.php', formData, { responseType: 'text' })
+        .subscribe({
+          next: (response) => {
+            this.contactForm.reset();
+            this.messageSent = true;
+
+            setTimeout(() => {
+              this.messageSent = false;
+            }, 5000);
+          },
+          error: (error) => {
+            console.error('Error while sending request: ', error);
+            console.error('Status code: ', error.status);
+            console.error('Error message: ', error.message);
+          }
+        });
     } else {
       this.contactForm.markAllAsTouched();
-      console.log('hihi');
     }
   }
 }
