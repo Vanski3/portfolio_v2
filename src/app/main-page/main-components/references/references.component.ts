@@ -39,7 +39,7 @@ export class ReferencesComponent implements AfterViewInit {
       gap: '4rem',
       focus: 'center',
       pagination: true,
-      arrows: false, // Verhindert, dass Splide eigene Pfeile generiert
+      arrows: false, 
       padding: {
         left: '20%',
         right: '20%',

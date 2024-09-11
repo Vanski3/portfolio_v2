@@ -1,0 +1,106 @@
+{
+    "header": {
+      "aboutMe": "Обо мне",
+      "skills": "Навыки",
+      "projects": "Проекты"
+    },
+    "landingPage": {
+      "frontendDeveloper": "Frontend Developer",
+      "basedInBerlin": "Базируется в Берлине",
+      "availableForRemoteWork": "Доступна для удаленной работы"
+    },
+    "aboutMe": {
+      "whoIAm": "Кто я",
+      "aboutMe": "Обо мне",
+      "introduction": "Меня зовут Ванесса Закс, я frontend-разработчик из Берлина, специализируюсь на HTML, CSS, JavaScript и Angular. Моя страсть заключается в создании визуально привлекательных и функциональных пользовательских интерфейсов, которые улучшают пользовательский опыт. Я постоянно учусь и слежу за новыми трендами в веб-разработке.",
+      "moreAboutMe": "С фокусом на user-centered design, я стремлюсь создавать интуитивные, адаптивные и вовлекающие веб-приложения. Мне нравится работать в кросс-функциональных командах, превращая сложные идеи в элегантные решения. Независимо от того, разрабатываю ли я новый сайт или улучшаю существующую платформу, я нацелена на высокие результаты."
+    },
+    "skills": {
+      "technologies": "Технологии",
+      "skillSet": "Набор навыков",
+      "frontendTechnologies": "Frontend технологии",
+      "frontendTechnologiesDescription": "Опыт в HTML, CSS и JavaScript с сильной основой в адаптивном дизайне.",
+      "frameworksLibraries": "Фреймворки и библиотеки",
+      "frameworksLibrariesDescription": "Опыт работы с Angular, Bootstrap и Material Design для создания современных и удобных приложений.",
+      "developmentTools": "Инструменты разработки",
+      "developmentToolsDescription": "Знание Git для контроля версий, Scrum для управления проектами и Firebase для интеграции бэкенда.",
+      "apis": "API",
+      "apisDescription": "Умение интегрировать и разрабатывать RESTful APIs для бесшовной передачи данных.",
+      "letsTalk": "Давайте обсудим"
+    },
+    "portfolio": {
+      "whatIsThisProject": "О чем этот проект?",
+      "nextProject": "Следующий проект",
+      "projects": {
+        "join": {
+          "index": "01",
+          "name": "Join",
+          "description": "Task Manager, вдохновленный Kanban-системой. Создавайте и организуйте задачи с помощью drag-and-drop, назначайте пользователей и категории.",
+          "technologies": "Технологии",
+          "github": "GitHub",
+          "liveTest": "Live Test"
+        },
+        "elPolloLoco": {
+          "index": "02",
+          "name": "El Pollo Loco",
+          "description": "Игра, разработанная на HTML, CSS и JavaScript, где вам нужно избегать препятствий.",
+          "technologies": "Технологии",
+          "github": "GitHub",
+          "liveTest": "Live Test"
+        }
+      }
+    },
+    "references": {
+      "reference1": {
+        "text": "Работать с Ванессой над нашим программным проектом было удовольствием. Ее чувство юмора и легкий характер создали позитивную атмосферу в команде. Особенно впечатлила ее способность сохранять расслабленность при выполнении качественной работы.",
+        "name": "P. Nehlsen",
+        "jobTitle": "Командный партнер"
+      },
+      "reference2": {
+        "text": "Ванесса всегда демонстрировала высокий уровень вовлеченности и экспертизы в работе. Ее командный дух сделал ее ценным членом нашей команды. Рекомендую Ванессу.",
+        "name": "R. Lochschmidt",
+        "jobTitle": "Командный партнер"
+      },
+      "nextReference": {
+        "text": "Следующий отзыв",
+        "name": "Будущий участник",
+        "jobTitle": ""
+      }
+    },
+    "contact": {
+      "contactMe": "Свяжитесь со мной",
+      "letsWorkTogether": "Давайте поработаем вместе",
+      "gotProblemToSolve": "Есть проблема, которую нужно решить?",
+      "contactFormIntro": "Свяжитесь со мной через эту форму. Мне интересно узнать ваши идеи и внести вклад в ваши проекты.",
+      "needFrontendDeveloper": "Нужен Frontend-разработчик?",
+      "letsTalk": "Давайте обсудим!",
+      "nameLabel": "Как вас зовут?",
+      "namePlaceholder": "Ваше имя здесь",
+      "nameError": "Ой! Похоже, ваше имя отсутствует.",
+      "emailLabel": "Какой у вас email?",
+      "emailPlaceholder": "вашemail@email.com",
+      "emailError": "Ой! Требуется ваш email.",
+      "messageLabel": "Как я могу вам помочь?",
+      "messagePlaceholder": "Привет, Ванесса, меня интересует...",
+      "messageError": "Что вам нужно разработать?",
+      "privacyLabel": "Я прочитал политику конфиденциальности и согласен с обработкой моих данных.",
+      "privacyError": "Необходимо принять политику конфиденциальности.",
+      "sayHello": "Сказать привет",
+      "messageSent": "Спасибо! Ваше сообщение отправлено."
+    },
+    "footer": {
+      "webDeveloper": "Web Developer",
+      "location": "Берлин, Германия",
+      "copyright": "© Ванесса Закс 2024",
+      "github": "GitHub",
+      "email": "Email",
+      "imprint": "Imprint"
+    },
+    "imprint": {
+      "imprintTitle": "Imprint",
+      "address": "Ванесса Закс<br />Гертруд-Кольмар-Штр. 5 <br />10117 Берлин",
+      "contactTitle": "Контакт",
+      "email": "E-Mail: contact&#64;vanessa-sachs.com"
+    }
+  }
+  
