@@ -20,7 +20,7 @@ $karla-ft: 'Karla';
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        margin-top: 130px;
+        margin-top: 315px;
 
         .headline-wrapper {
           text-align: center;
@@ -76,7 +76,7 @@ $karla-ft: 'Karla';
         justify-content: space-between;
         padding: 0 50px;
         position: relative;
-        bottom: 250px;
+        top: -12%;
         pointer-events: none;
 
         .left-line-wrapper {
@@ -84,8 +84,12 @@ $karla-ft: 'Karla';
           flex-direction: column;
           align-items: center;
           gap: 20px;
-          position: relative;
-          top: 90px;
+          // position: relative;
+          // top: 90px;
+
+          .empty1{
+            height: 262px;
+          }
 
           .arrow-wrapper {
             border: 1px solid $accent-clr;
@@ -99,7 +103,7 @@ $karla-ft: 'Karla';
           }
 
           .left-line {
-            height: 180px;
+            height: 325px;
             width: 1px;
             background-color: $accent-clr;
           }
@@ -111,8 +115,12 @@ $karla-ft: 'Karla';
           flex-direction: column;
           gap: 20px;
           pointer-events: all;
-          position: relative;
-          bottom: 35px;
+          // position: relative;
+          // bottom: 35px;
+
+          .empty2{
+            height: 20px;
+          }
 
           .email {
             writing-mode: vertical-rl;
@@ -173,7 +181,7 @@ $karla-ft: 'Karla';
           }
 
           .right-line {
-            height: 150px;
+            height: 290px;
             width: 1px;
             background-color: $ft-clr;
             margin-right: 10px;
@@ -184,7 +192,7 @@ $karla-ft: 'Karla';
 
     .banner-wrapper {
       position: absolute;
-      bottom: 50px;
+      bottom: 10%;
       background: rgba(255, 255, 255, 0.15);
       backdrop-filter: blur(2px);
       color: $accent-clr;
@@ -291,9 +299,9 @@ $karla-ft: 'Karla';
     font-size: 5.25rem !important;
   }
 
-  .right-line-wrapper {
-    top: 149px !important;
-  }
+  // .right-line-wrapper {
+  //   top: 149px !important;
+  // }
 
   .right-line-wrapper .email {
     display: none;
@@ -303,13 +311,13 @@ $karla-ft: 'Karla';
     display: block !important;
   }
 
-  .right-line {
-    height: 300px !important;
-  }
+  // .right-line {
+  //   height: 300px !important;
+  // }
 
-  .left-line-wrapper{
-    top: 213px !important;
-  }
+  // .left-line-wrapper{
+  //   top: 213px !important;
+  // }
 }
 
 @media (max-width: 780px) {

@@ -1,22 +1,22 @@
 <section class="contact-section">
   <div class="left">
-    <h3>Contact me</h3>
-    <h1>Let's work <br> together</h1>
-    <h2>Got a problem to solve?</h2>
-    <p>Contact me through this form, I am interested in hearing from you, knowing your ideas and contributing to your projects with my work.</p>
-    <p>Need a Frontend developer? <a href="#contact">Let's talk!</a></p>
+    <h3>{{ 'contact.contactMe' | translate }}</h3>
+    <h1>{{ 'contact.letsWork' | translate }} <br> {{ 'contact.together' | translate }}</h1>
+    <h2>{{ 'contact.gotProblemToSolve' | translate }}</h2>
+    <p>{{ 'contact.contactFormIntro' | translate }}.</p>
+    <p>{{ 'contact.needFrontendDeveloper' | translate }}<a href="#contact">{{ 'contact.letsTalk' | translate }}</a></p>
   </div>
 
   <div class="right">
     <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
       <!-- Name Input -->
       <div class="form-group required" [ngClass]="{'error': isInvalid('name'), 'success': isValid('name')}">
-        <label for="name">What's your name?</label>
+        <label for="name">{{ 'contact.nameLabel' | translate }}</label>
         <input
           type="text"
           id="name"
           formControlName="name"
-          placeholder="Your name goes here"
+          placeholder="{{ 'contact.namePlaceholder' | translate }}"
           required
         />
         <!-- Error/Success Icons -->
@@ -28,18 +28,18 @@
         </label>
         <!-- Error Message -->
         <div class="error-message" *ngIf="isInvalid('name')">
-          Oops! It seems your name is missing
+          {{ 'contact.nameError' | translate }}
         </div>
       </div>
 
       <!-- Email Input -->
       <div class="form-group required" [ngClass]="{'error': isInvalid('email'), 'success': isValid('email')}">
-        <label for="email">What's your email?</label>
+        <label for="email"> {{ 'contact.emailLabel' | translate }}</label>
         <input
           type="email"
           id="email"
           formControlName="email"
-          placeholder="youremail@email.com"
+          placeholder=" {{ 'contact.emailPlaceholder' | translate }}"
           required
         />
         <!-- Error/Success Icons -->
@@ -51,17 +51,17 @@
         </label>
         <!-- Error Message -->
         <div class="error-message" *ngIf="isInvalid('email')">
-          Hoppala! Your email is required
+          {{ 'contact.emailError' | translate }}
         </div>
       </div>
 
       <!-- Message Input -->
       <div class="form-group required" [ngClass]="{'error': isInvalid('message'), 'success': isValid('message')}">
-        <label for="message">How can I help you?</label>
+        <label for="message">{{ 'contact.messageLabel' | translate }}</label>
         <textarea
           id="message"
           formControlName="message"
-          placeholder="Hello Vanessa, I am interested in..."
+          placeholder="{{ 'contact.messagePlaceholder' | translate }}"
           required
         ></textarea>
         <!-- Error/Success Icons -->
@@ -73,7 +73,7 @@
         </label>
         <!-- Error Message -->
         <div class="error-message" *ngIf="isInvalid('message')">
-          What do you need to develop?
+          {{ 'contact.messageError' | translate }}
         </div>
       </div>
 
@@ -93,7 +93,7 @@
           required
         />
         <label for="privacy">
-          I've read the <a class="privacy-highlight" href="#">privacy policy</a> and agree to the processing of my data as outlined.
+          {{ 'contact.privacyLabel1' | translate }} <a class="privacy-highlight" href="#"> {{ 'contact.privacyLabel2' | translate }}</a>  {{ 'contact.privacyLabel3' | translate }}
         </label>
         <!-- Error Message -->
         <div class="error-message" *ngIf="isInvalid('privacy')">

@@ -1,12 +1,14 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { HttpClient, HttpClientModule } from '@angular/common/http'; 
 import { CommonModule } from '@angular/common';
+import { TranslationService } from '../../../translation.service';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [CommonModule, ReactiveFormsModule, HttpClientModule], 
+  imports: [CommonModule, ReactiveFormsModule, HttpClientModule, TranslateModule], 
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.scss'],
 })
@@ -64,4 +66,6 @@ export class ContactComponent {
       this.contactForm.markAllAsTouched();
     }
   }
+
+  langBoolean = inject(TranslationService);
 }

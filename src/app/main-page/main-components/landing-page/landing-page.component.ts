@@ -1,16 +1,19 @@
-import { Component, OnInit, ElementRef, ViewChild } from '@angular/core';
+import { Component, OnInit, ElementRef, ViewChild, inject } from '@angular/core';
 import { gsap } from 'gsap';
 import { TextPlugin } from 'gsap/TextPlugin';
 
 import { HeaderComponent } from '../../header/header.component';
 import { CommonModule } from '@angular/common';
 
+import { TranslateModule } from '@ngx-translate/core';
+import { TranslationService } from '../../../translation.service';
+
 gsap.registerPlugin(TextPlugin);
 
 @Component({
   selector: 'app-landing-page',
   standalone: true,
-  imports: [HeaderComponent, CommonModule],
+  imports: [HeaderComponent, CommonModule, TranslateModule],
   templateUrl: './landing-page.component.html',
   styleUrl: './landing-page.component.scss',
 })
@@ -91,4 +94,7 @@ export class LandingPageComponent implements OnInit {
       this.headline.nativeElement.innerHTML = 'Vanessa Sachs';
     }
   }
+
+  langBoolean = inject(TranslationService);
+
 }

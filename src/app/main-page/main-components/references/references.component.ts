@@ -1,5 +1,9 @@
-import { Component, AfterViewInit } from '@angular/core';
+import { Component, AfterViewInit, inject } from '@angular/core';
 import Splide from '@splidejs/splide';
+import { CommonModule } from '@angular/common';
+import { TranslateModule, TranslateService } from '@ngx-translate/core'; 
+import { take } from 'rxjs/operators'; 
+
 
 interface Reference {
   text: string;
@@ -10,28 +14,73 @@ interface Reference {
 @Component({
   selector: 'app-references',
   standalone: true,
-  imports: [],
+  imports: [CommonModule, TranslateModule],
   templateUrl: './references.component.html',
   styleUrls: ['./references.component.scss'],
 })
 export class ReferencesComponent implements AfterViewInit {
+
+  private translate = inject(TranslateService);  // injecte TranslateService
+
   references: Reference[] = [
     {
-      text: "Working with Vanessa on our programming project was a delight. Her humorous and easy-going nature created a positive team environment. Vanessa's ability to maintain a relaxed atmosphere while delivering quality work was truly impressive.",
-      name: "P. Nehlsen",
-      jobTitle: "Team Partner",
+      text: '',
+      name: '',
+      jobTitle: '',
     },
     {
-      text: "Vanessa consistently demonstrated a high level of dedication and expertise in her work. Her strong team spirit made her a valuable asset to our team. I highly recommend Vanessa.",
-      name: "R. Lochschmidt",
-      jobTitle: "Team Partner",
+      text: '',
+      name: '',
+      jobTitle: '',
     },
     {
-      text: 'Next reference',
-      name: 'Future Contributor',
+      text: '',
+      name: '',
       jobTitle: '',
     },
   ];
+
+  constructor() {
+    this.loadTranslations();  // Lade die Übersetzungen beim Start
+    this.translate.onLangChange.subscribe(() => {
+      this.loadTranslations();  // Lade die Übersetzungen neu, wenn sich die Sprache ändert
+    });
+  }
+
+  loadTranslations() {
+    // Lade die erste Referenz
+    this.translate.get('references.reference1.text').pipe(take(1)).subscribe((res) => {
+      this.references[0].text = res;
+    });
+    this.translate.get('references.reference1.name').pipe(take(1)).subscribe((res) => {
+      this.references[0].name = res;
+    });
+    this.translate.get('references.reference1.jobTitle').pipe(take(1)).subscribe((res) => {
+      this.references[0].jobTitle = res;
+    });
+
+    // Lade die zweite Referenz
+    this.translate.get('references.reference2.text').pipe(take(1)).subscribe((res) => {
+      this.references[1].text = res;
+    });
+    this.translate.get('references.reference2.name').pipe(take(1)).subscribe((res) => {
+      this.references[1].name = res;
+    });
+    this.translate.get('references.reference2.jobTitle').pipe(take(1)).subscribe((res) => {
+      this.references[1].jobTitle = res;
+    });
+
+    // Lade die nächste Referenz
+    this.translate.get('references.nextReference.text').pipe(take(1)).subscribe((res) => {
+      this.references[2].text = res;
+    });
+    this.translate.get('references.nextReference.name').pipe(take(1)).subscribe((res) => {
+      this.references[2].name = res;
+    });
+    this.translate.get('references.nextReference.jobTitle').pipe(take(1)).subscribe((res) => {
+      this.references[2].jobTitle = res;
+    });
+  }
 
   ngAfterViewInit(): void {
     var splide = new Splide('.splide', {
@@ -68,6 +117,4 @@ export class ReferencesComponent implements AfterViewInit {
   
     splide.mount();
   }
-  
-
 }

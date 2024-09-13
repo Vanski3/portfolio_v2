@@ -1,106 +1,114 @@
 {
-    "header": {
-      "aboutMe": "About me",
-      "skills": "Skills",
-      "projects": "Projects"
-    },
-    "landingPage": {
-      "frontendDeveloper": "Frontend Developer",
-      "basedInBerlin": "Based in Berlin",
-      "availableForRemoteWork": "available for remote work"
-    },
-    "aboutMe": {
-      "whoIAm": "Who I am",
-      "aboutMe": "About me",
-      "introduction": "I'm Vanessa Sachs, a frontend developer based in Berlin, specializing in HTML, CSS, JavaScript, and Angular. My passion lies in creating visually appealing and functional user interfaces that enhance the overall user experience. I am dedicated to continuous learning and staying up-to-date with the latest trends and technologies in web development.",
-      "moreAboutMe": "With a strong focus on user-centered design, I strive to build intuitive, responsive, and engaging web applications. I enjoy collaborating with cross-functional teams to turn complex ideas into elegant solutions. Whether it's developing a new website or improving an existing platform, I am committed to delivering exceptional results."
-    },
-    "skills": {
-      "technologies": "Technologies",
-      "skillSet": "Skill Set",
-      "frontendTechnologies": "Frontend Technologies",
-      "frontendTechnologiesDescription": "Proficient in HTML, CSS, and JavaScript, with a strong foundation in responsive design.",
-      "frameworksLibraries": "Frameworks & Libraries",
-      "frameworksLibrariesDescription": "Experienced with Angular, Bootstrap, and Material Design for building modern, user-friendly applications.",
-      "developmentTools": "Development Tools",
-      "developmentToolsDescription": "Familiar with Git for version control, Scrum for agile project management, and Firebase for backend integration.",
-      "apis": "APIs",
-      "apisDescription": "Skilled in integrating and developing RESTful APIs to enable seamless data communication.",
-      "letsTalk": "Let's talk"
-    },
-    "portfolio": {
-      "whatIsThisProject": "What is this project about?",
-      "nextProject": "Next project",
-      "projects": {
-        "join": {
-          "index": "01",
-          "name": "Join",
-          "description": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
-          "technologies": "Technologies",
-          "github": "GitHub",
-          "liveTest": "Live Test"
-        },
-        "elPolloLoco": {
-          "index": "02",
-          "name": "El Pollo Loco",
-          "description": "A game developed using HTML, CSS, and JavaScript where you need to navigate and avoid obstacles.",
-          "technologies": "Technologies",
-          "github": "GitHub",
-          "liveTest": "Live Test"
-        }
-      }
-    },
-    "references": {
-      "reference1": {
-        "text": "Working with Vanessa on our programming project was a delight. Her humorous and easy-going nature created a positive team environment. Vanessa's ability to maintain a relaxed atmosphere while delivering quality work was truly impressive.",
-        "name": "P. Nehlsen",
-        "jobTitle": "Team Partner"
+  "header": {
+    "aboutMe": "About me",
+    "skills": "Skills",
+    "projects": "Projects"
+  },
+  "landingPage": {
+    "frontendDeveloper": "Frontend Developer",
+    "basedInBerlin": "Based in Berlin",
+    "availableForRemoteWork": "available for remote work",
+    "contactMe": "Contact me",
+    "checkMyWork": "Check my work"
+  },
+  "aboutMe": {
+    "whoIAm": "Who I am",
+    "aboutMe": "About me",
+    "introduction": "I'm Vanessa Sachs, a frontend developer based in Berlin, specializing in HTML, CSS, JavaScript, and Angular. My passion lies in creating visually appealing and functional user interfaces that enhance the overall user experience. I am dedicated to continuous learning and staying up-to-date with the latest trends and technologies in web development.",
+    "moreAboutMe": "With a strong focus on user-centered design, I strive to build intuitive, responsive, and engaging web applications. I enjoy collaborating with cross-functional teams to turn complex ideas into elegant solutions. Whether it's developing a new website or improving an existing platform, I am committed to delivering exceptional results."
+  },
+  "skills": {
+    "technologies": "Technologies",
+    "skillSet": "Skill Set",
+    "frontendTechnologies": "Frontend Technologies",
+    "frontendTechnologiesDescription": "Proficient in HTML, CSS, and JavaScript, with a strong foundation in responsive design.",
+    "frameworksLibraries": "Frameworks & Libraries",
+    "frameworksLibrariesDescription": "Experienced with Angular, Bootstrap, and Material Design for building modern, user-friendly applications.",
+    "developmentTools": "Development Tools",
+    "developmentToolsDescription": "Familiar with Git for version control, Scrum for agile project management, and Firebase for backend integration.",
+    "apis": "APIs",
+    "apisDescription": "Skilled in integrating and developing RESTful APIs to enable seamless data communication.",
+    "letsTalk": "Let's talk"
+  },
+  "portfolio": {
+    "portfolio": "Portfolio",
+    "featuredProjects": "Featured Projects",
+    "subline": "Explore a selection of my work here - Interact with projects to see my skills in action.",
+    "whatIsThisProject": "What is this project about?",
+    "nextProject": "Next project",
+    "projects": {
+      "join": {
+        "index": "01",
+        "name": "Join",
+        "description": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
+        "technologies": "Technologies",
+        "github": "GitHub",
+        "liveTest": "Live Test"
       },
-      "reference2": {
-        "text": "Vanessa consistently demonstrated a high level of dedication and expertise in her work. Her strong team spirit made her a valuable asset to our team. I highly recommend Vanessa.",
-        "name": "R. Lochschmidt",
-        "jobTitle": "Team Partner"
-      },
-      "nextReference": {
-        "text": "Next reference",
-        "name": "Future Contributor",
-        "jobTitle": ""
+      "elPolloLoco": {
+        "index": "02",
+        "name": "El Pollo Loco",
+        "description": "A game developed using HTML, CSS, and JavaScript where you need to navigate and avoid obstacles.",
+        "technologies": "Technologies",
+        "github": "GitHub",
+        "liveTest": "Live Test"
       }
-    },
-    "contact": {
-      "contactMe": "Contact me",
-      "letsWorkTogether": "Let's work together",
-      "gotProblemToSolve": "Got a problem to solve?",
-      "contactFormIntro": "Contact me through this form, I am interested in hearing from you, knowing your ideas and contributing to your projects with my work.",
-      "needFrontendDeveloper": "Need a Frontend developer?",
-      "letsTalk": "Let's talk!",
-      "nameLabel": "What's your name?",
-      "namePlaceholder": "Your name goes here",
-      "nameError": "Oops! It seems your name is missing",
-      "emailLabel": "What's your email?",
-      "emailPlaceholder": "youremail@email.com",
-      "emailError": "Hoppala! Your email is required",
-      "messageLabel": "How can I help you?",
-      "messagePlaceholder": "Hello Vanessa, I am interested in...",
-      "messageError": "What do you need to develop?",
-      "privacyLabel": "I've read the privacy policy and agree to the processing of my data as outlined.",
-      "privacyError": "You need to accept the privacy policy.",
-      "sayHello": "Say Hello",
-      "messageSent": "Thank you! Your message has been sent."
-    },
-    "footer": {
-      "webDeveloper": "Web Developer",
-      "location": "Berlin, Germany",
-      "copyright": "© Vanessa Sachs 2024",
-      "github": "GitHub",
-      "email": "Email",
-      "imprint": "Imprint"
-    },
-    "imprint": {
-      "imprintTitle": "Imprint",
-      "address": "Vanessa Sachs<br />Gertrud-Kolmar-Str. 5 <br />10117 Berlin",
-      "contactTitle": "Contact",
-      "email": "E-Mail: contact&#64;vanessa-sachs.com"
     }
+  },
+  "references": {
+    "heading": "What my colleagues say about me",
+    "reference1": {
+      "text": "Working with Vanessa on our programming project was a delight. Her humorous and easy-going nature created a positive team environment. Vanessa's ability to maintain a relaxed atmosphere while delivering quality work was truly impressive.",
+      "name": "P. Nehlsen",
+      "jobTitle": "Team Partner"
+    },
+    "reference2": {
+      "text": "Vanessa consistently demonstrated a high level of dedication and expertise in her work. Her strong team spirit made her a valuable asset to our team. I highly recommend Vanessa.",
+      "name": "R. Lochschmidt",
+      "jobTitle": "Team Partner"
+    },
+    "nextReference": {
+      "text": "Next reference",
+      "name": "Future Contributor",
+      "jobTitle": ""
+    }
+  },
+  "contact": {
+    "contactMe": "Contact me",
+    "letsWork": "Let's work",
+    "together": "together",
+    "gotProblemToSolve": "Got a problem to solve?",
+    "contactFormIntro": "Contact me through this form, I am interested in hearing from you, knowing your ideas and contributing to your projects with my work.",
+    "needFrontendDeveloper": "Need a Frontend developer?",
+    "letsTalk": "Let's talk!",
+    "nameLabel": "What's your name?",
+    "namePlaceholder": "Your name goes here",
+    "nameError": "Oops! It seems your name is missing",
+    "emailLabel": "What's your email?",
+    "emailPlaceholder": "youremail@email.com",
+    "emailError": "Hoppala! Your email is required",
+    "messageLabel": "How can I help you?",
+    "messagePlaceholder": "Hello Vanessa, I am interested in...",
+    "messageError": "What do you need to develop?",
+    "privacyLabel1": "I've read the",
+    "privacyLabel2":"privacy policy",
+    "privacyLabel3": "and agree to the processing of my data as outlined.",
+    "privacyError": "You need to accept the privacy policy.",
+    "sayHello": "Say Hello",
+    "messageSent": "Thank you! Your message has been sent."
+  },
+  "footer": {
+    "webDeveloper": "Web Developer",
+    "location": "Berlin, Germany",
+    "copyright": "© Vanessa Sachs 2024",
+    "github": "GitHub",
+    "email": "Email",
+    "imprint": "Imprint"
+  },
+  "imprint": {
+    "imprintTitle": "Imprint",
+    "address": "Vanessa Sachs<br />Gertrud-Kolmar-Str. 5 <br />10117 Berlin",
+    "contactTitle": "Contact",
+    "email": "E-Mail: contact&#64;vanessa-sachs.com"
   }
-  
+}

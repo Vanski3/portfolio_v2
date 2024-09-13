@@ -1,10 +1,9 @@
-<section class="portfolio">
+<section class="portfolio" data-aos="fade-right">
     <div class="headline-wrapper">
-        <h3>Portfolio</h3>
-        <h2>Featured Projects</h2>
+        <h3>{{ 'portfolio.portfolio' | translate }}</h3>
+        <h2>{{ 'portfolio.featuredProjects' | translate }}</h2>
         <p class="subline">
-          Explore a selection of my work here - Interact with projects to see my skills in action.
-        </p>
+          {{ 'portfolio.subline' | translate }}</p>
     </div>
    
   
@@ -47,7 +46,7 @@
                     </div>
                     
                     <h3>What is this project about?</h3>
-                    <p>{{ selectedProject.description }}</p>
+                    <p>{{ selectedProject.description}}</p>
 
                     <div class="tech-stack">
                         @for ( tech of selectedProject.technologies; track tech) {
@@ -72,7 +71,7 @@
                 <img class="close-btn" src="./../../../../assets/img/portfolio/close-btn.svg" (click)="closeDialog()" alt="Close" />
     
                 <button class="next-project-btn" (click)="nextProject()">
-                    Next project 
+                  {{ 'portfolio.nextProject' | translate }}
                     <span class="arrow-icon">
                         <img class="arrows-thin" src="./../../../../assets/img/portfolio/arrows-thin.svg" alt="">
                         <img class="arrows-thick" src="./../../../../assets/img/portfolio/arrows-thick.svg" alt="">

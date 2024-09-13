@@ -1,10 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { FooterComponent } from './main-page/footer/footer.component';
 import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './main-page/header/header.component';
 import { MainComponentsComponent } from './main-page/main-components/main-components.component';
 import { TranslateModule } from '@ngx-translate/core';
+import AOS from 'aos';
 
 @Component({
   selector: 'app-root',
@@ -15,4 +16,8 @@ import { TranslateModule } from '@ngx-translate/core';
 })
 export class AppComponent {
   title = 'portfolio_v2';
+
+  ngOnInit(): void {
+    AOS.init();
+  }
 }
