@@ -1,5 +1,6 @@
 {
   "header": {
+    "home":"Home",
     "aboutMe": "Über mich",
     "skills": "Skills",
     "projects": "Projekte"
@@ -7,7 +8,7 @@
   "landingPage": {
     "frontendDeveloper": "Frontend Developer",
     "basedInBerlin": "aus Berlin",
-    "availableForRemoteWork": "Verfügbar für Remote Jobs",
+    "availableForRemoteWork": "verfügbar für Remote Jobs",
     "contactMe": "Schreib mir",
     "checkMyWork": "Projekte"
   },

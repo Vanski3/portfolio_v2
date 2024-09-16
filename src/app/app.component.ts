@@ -1,5 +1,5 @@
 import { Component, OnInit} from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterLink, RouterOutlet } from '@angular/router';
 import { FooterComponent } from './main-page/footer/footer.component';
 import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './main-page/header/header.component';
@@ -10,7 +10,7 @@ import AOS from 'aos';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, CommonModule, FooterComponent, HeaderComponent, MainComponentsComponent, TranslateModule ],
+  imports: [RouterOutlet, RouterLink, CommonModule, FooterComponent, HeaderComponent, MainComponentsComponent, TranslateModule ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

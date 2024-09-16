@@ -4,7 +4,7 @@
     <h1>{{ 'contact.letsWork' | translate }} <br> {{ 'contact.together' | translate }}</h1>
     <h2>{{ 'contact.gotProblemToSolve' | translate }}</h2>
     <p>{{ 'contact.contactFormIntro' | translate }}.</p>
-    <p>{{ 'contact.needFrontendDeveloper' | translate }}<a href="#contact">{{ 'contact.letsTalk' | translate }}</a></p>
+    <p>{{ 'contact.needFrontendDeveloper' | translate }} <a href="#contact">{{ 'contact.letsTalk' | translate }}</a></p>
   </div>
 
   <div class="right">
@@ -93,17 +93,17 @@
           required
         />
         <label for="privacy">
-          {{ 'contact.privacyLabel1' | translate }} <a class="privacy-highlight" href="#"> {{ 'contact.privacyLabel2' | translate }}</a>  {{ 'contact.privacyLabel3' | translate }}
+          {{ 'contact.privacyLabel1' | translate }} <a class="privacy-highlight" routerLink="imprint"> {{ 'contact.privacyLabel2' | translate }}</a>  {{ 'contact.privacyLabel3' | translate }}
         </label>
         <!-- Error Message -->
         <div class="error-message" *ngIf="isInvalid('privacy')">
-          You need to accept the privacy policy.
+          {{ 'contact.privacyError' | translate }}
         </div>
       </div>
 
       <!-- Submit Button -->
       <button type="submit" [disabled]="!contactForm.valid">
-        <span>Say Hello</span>
+        <span>{{ 'contact.sayHello' | translate }}</span>
       </button>
     </form>
   </div>
@@ -111,5 +111,5 @@
 
 <!-- Success Message -->
 <section *ngIf="messageSent">
-  Thank you! Your message has been sent.
+  {{ 'contact.messageSent' | translate }}
 </section>

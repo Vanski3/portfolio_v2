@@ -1,5 +1,6 @@
 {
   "header": {
+    "home":"Home",
     "aboutMe": "About me",
     "skills": "Skills",
     "projects": "Projects"
@@ -107,8 +108,10 @@
   },
   "imprint": {
     "imprintTitle": "Imprint",
-    "address": "Vanessa Sachs<br />Gertrud-Kolmar-Str. 5 <br />10117 Berlin",
+    "personName": "Vanessa Sachs",
+    "address":" Gertrud-Kolmar-Str. 5",
+    "zip": "10117 Berlin",
     "contactTitle": "Contact",
-    "email": "E-Mail: contact&#64;vanessa-sachs.com"
+    "email": "E-Mail"
   }
 }

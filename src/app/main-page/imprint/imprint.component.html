@@ -1,18 +1,18 @@
-<section class="imprint">
-    <div class="fix-btn">
-        <a routerLink="/" routerLinkActive="active"><img class="go-up-btn" src="./assets/img/imprint/up.png"
-                alt="back arrow"></a>
+<app-header></app-header>
+
+<section>
+    <div class="imprint">
         <div class="main-content">
-            <h1>Imprint</h1>
-            <p>Vanessa Sachs<br />
-                Gertrud-Kolmar-Str. 5 <br />
-                10117 Berlin</p>
-            <h2>Contact</h2>
-            <p>E-Mail: contact&#64;vanessa-sachs.com></p>
-
-
+            <h1>{{ 'imprint.imprintTitle' | translate }}</h1>
+            <p>{{ 'imprint.personName' | translate }}<br />
+                {{ 'imprint.address' | translate }} <br />
+                {{ 'imprint.zip' | translate }}</p>
+            <h2>{{ 'imprint.contactTitle' | translate }}</h2>
+            <p>{{ 'imprint.email' | translate }}: contact&#64;vanessa-sachs.com</p>
         </div>
     </div>
+
+    <app-privacy></app-privacy>
 </section>
    
 

@@ -22,6 +22,7 @@
     </div>
 
     <nav class="desktop-nav">
+      <a href="#">{{'header.home' | translate}}</a>
       <a href="#about-me">{{'header.aboutMe' | translate}}</a>
       <a href="#skills">{{'header.skills' | translate}}</a>
       <a href="#projects">{{'header.projects' | translate}}</a>
@@ -41,9 +42,10 @@
           <img src="./../../../assets/img/header/close_menu.svg" alt="close" (click)="toggleMenu()" />
         </div>
         <nav class="mobile-nav">
-          <a (click)="toggleMenu()">{{'header.aboutMe' | translate}}</a>
-          <a (click)="toggleMenu()">{{'header.skills' | translate}}</a>
-          <a (click)="toggleMenu()">{{'header.projects' | translate}}</a>
+          <a (click)="toggleMenu()" href="#">{{'header.home' | translate}}</a>
+          <a (click)="toggleMenu()" href="#about-me">{{'header.aboutMe' | translate}}</a>
+          <a (click)="toggleMenu()" href="#skills">{{'header.skills' | translate}}</a>
+          <a (click)="toggleMenu()" href="#projects">{{'header.projects' | translate}}</a>
         </nav>
         <div class="lang-wrapper-mobile">
           <div class="lang-btn small">

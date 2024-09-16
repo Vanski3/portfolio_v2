@@ -1,0 +1,16 @@
+
+h1{
+    font-size: 3rem;
+}
+
+.main-content{
+    flex-direction: column;
+    margin: 20px;
+}
+
+
+@media(max-width: 515px){
+    h1{
+        font-size: 1.5rem !important;
+    }
+}

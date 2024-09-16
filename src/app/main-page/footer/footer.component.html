@@ -3,20 +3,20 @@
       <div class="left">
         <img src="./../../../assets/img/header/vanessa_text_filled.svg" alt="Logo" />
         <div class="txt-container">
-          <p>Web Developer</p>
-          <p>Berlin, Germany</p>
+          <p>{{ 'footer.webDeveloper' | translate }}</p>
+          <p>{{ 'footer.location' | translate }}</p>
         </div>
       </div>
   
       <div class="middle">
-        <p class="copyright">© Vanessa Sachs 2024</p>
+        <p class="copyright">{{ 'footer.copyright' | translate }}</p>
       </div>
   
       <div class="right">
         <div class="empty"></div>
-        <a target="_blank" href="https://github.com/Vanski3">GitHub</a>
-        <a href="#contact">Email</a>
-        <a href="#imprint">Imprint</a>
+        <a target="_blank" href="https://github.com/Vanski3">{{ 'footer.github' | translate }}</a>
+        <a href="#contact">{{ 'footer.email' | translate }}</a>
+        <a routerLink="imprint">{{ 'footer.imprint' | translate }}</a>
       </div>
     </footer>
 </section>
