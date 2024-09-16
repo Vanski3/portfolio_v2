@@ -113,5 +113,122 @@
     "zip": "10117 Berlin",
     "contactTitle": "Contact",
     "email": "E-Mail"
+  }, 
+    "privacy": {
+      "title": "Privacy Policy",
+      "preamble": "Preamble",
+      "preambleText": "With the following privacy policy, we would like to inform you about the types of your personal data (hereinafter also referred to as \"data\") we process, for what purposes, and to what extent. The privacy policy applies to all processing of personal data carried out by us, both in the context of providing our services and, in particular, on our websites, in mobile applications, and within external online presences, such as our social media profiles (hereinafter collectively referred to as \"online offer\").",
+      "genderNeutral": "The terms used are not gender-specific.",
+      "lastUpdated": "As of: September 16, 2024",
+      "contentOverview": "Table of contents",
+      "responsible": {
+        "title": "Responsible party",
+        "name": "Vanessa Sachs",
+        "street": "Gertrud-Kolmar-Straße 5",
+        "postalCode": "10117",
+        "city": "Berlin",
+        "country": "Germany"
+      },
+      "email": {
+        "label": "Email address:"
+      },
+      "processingOverview": "Overview of processing",
+      "processingOverviewText": "The following overview summarizes the types of data processed and the purposes of their processing, and refers to the data subjects.",
+      "dataTypes": {
+        "title": "Types of data processed",
+        "item1": "Inventory data",
+        "item2": "Contact data",
+        "item3": "Content data",
+        "item4": "Usage data",
+        "item5": "Meta-, communication- and procedural data",
+        "item6": "Protocol data"
+      },
+      "dataSubjects": {
+        "title": "Categories of data subjects",
+        "item1": "Communication partners",
+        "item2": "Users"
+      },
+      "purposes": {
+        "title": "Purposes of processing",
+        "item1": "Communication",
+        "item2": "Security measures",
+        "item3": "Organizational and administrative procedures",
+        "item4": "Feedback",
+        "item5": "Provision of our online offer and user-friendliness",
+        "item6": "Information technology infrastructure"
+      },
+      "legalBasis": {
+        "title": "Relevant legal basis",
+        "text": "The following is an overview of the legal basis of the GDPR on which we process personal data. Please note that national data protection laws may apply in your country of residence or our place of business in addition to the provisions of the GDPR. If more specific legal bases are relevant in individual cases, we will inform you of these in the privacy policy.",
+        "contract": {
+          "label": "Performance of contract and pre-contractual inquiries (Art. 6 Para. 1 S. 1 lit. b) GDPR)",
+          "description": "Processing is necessary for the performance of a contract to which the data subject is a party or for the implementation of pre-contractual measures that are taken at the request of the data subject."
+        },
+        "legitimateInterest": {
+          "label": "Legitimate interests (Art. 6 Para. 1 S. 1 lit. f) GDPR)",
+          "description": "Processing is necessary to safeguard the legitimate interests of the controller or a third party, provided that these interests are not overridden by the interests, fundamental rights, or freedoms of the data subject."
+        },
+        "nationalLaws": {
+          "title": "National data protection regulations in Germany",
+          "description": "In addition to the data protection provisions of the GDPR, national data protection regulations apply in Germany. This includes, in particular, the Federal Data Protection Act (BDSG), which contains special regulations on the right to information, the right to deletion, the right to object, the processing of special categories of personal data, processing for other purposes, and the transfer and automated decision-making in individual cases including profiling. In addition, the data protection laws of the individual federal states may apply."
+        },
+        "swissLaw": {
+          "title": "Notice on the application of the GDPR and Swiss DPA",
+          "description": "These data protection notices are intended to serve both the provision of information under the Swiss Data Protection Act (DSG) and the General Data Protection Regulation (GDPR). For this reason, please note that the terms of the GDPR are used for better spatial applicability and understanding. Specifically, the terms 'processing' of 'personal data,' 'legitimate interest,' and 'special categories of data' are used instead of the terms 'handling' of 'personal data,' 'overriding interest,' and 'particularly sensitive personal data' used in the Swiss DPA. The legal meaning of the terms will continue to be determined according to Swiss DPA within the scope of its application."
+        }
+      },
+      "securityMeasures": {
+        "title": "Security measures",
+        "text1": "We take appropriate technical and organizational measures in accordance with the legal requirements, taking into account the state of the art, implementation costs, and the nature, scope, circumstances, and purposes of the processing, as well as the different probabilities of occurrence and the extent of the threat to the rights and freedoms of natural persons, to ensure an adequate level of protection for the risk.",
+        "text2": "The measures include, in particular, ensuring the confidentiality, integrity, and availability of data by controlling physical and electronic access to the data, as well as access to, input, transmission, availability, and separation of data. Furthermore, we have established procedures to ensure the exercise of data subject rights, deletion of data, and responses to data risks. In addition, we consider the protection of personal data already during the development or selection of hardware, software, and procedures according to the principle of data protection through technology design and through privacy-friendly default settings."
+      },
+      "dataTransfers": {
+        "title": "Transfer of personal data",
+        "text": "In the course of processing personal data, it may happen that this data is transferred to other locations, companies, legally independent organizational units, or persons, or disclosed to them. Recipients of this data may include service providers for IT tasks or providers of services and content embedded in a website. In such cases, we comply with legal requirements and, in particular, conclude appropriate contracts or agreements with the recipients of your data, which serve to protect your data."
+      },
+      "internationalTransfers": {
+        "title": "International data transfers",
+        "text1": "Data processing in third countries: If we process data in a third country (i.e., outside the European Union (EU), the European Economic Area (EEA)), or if the processing takes place in the course of using third-party services or disclosing or transferring data to other persons, entities, or companies, this only occurs in accordance with legal requirements.",
+        "text2": "If the level of data protection in the third country has been recognized as adequate by an adequacy decision (Art. 45 GDPR), this serves as the basis for data transfers. Otherwise, data transfers only occur when the data protection level is otherwise secured, particularly through standard contractual clauses (Art. 46 Para. 2 lit. c) GDPR), explicit consent, or in the case of contractual or legally required transmission (Art. 49 Para. 1 GDPR)."
+      },
+      "dataRetention": {
+        "title": "General information on data retention and deletion",
+        "text1": "We delete personal data that we process in accordance with legal requirements as soon as the underlying consents are revoked, or there are no further legal grounds for the processing. This applies to cases where the original purpose of the processing ceases to apply, or the data is no longer required. Exceptions to this rule exist when legal obligations or special interests require longer retention or archiving of the data.",
+        "text2": "In particular, data that must be retained for commercial or tax reasons, or whose storage is necessary for the pursuit of legal claims or to protect the rights of other natural or legal persons, must be appropriately archived.",
+        "text3": "Our privacy notices contain additional information on the retention and deletion of data that are specific to certain processing procedures."
+      },
+      "rights": {
+        "title": "Rights of data subjects",
+        "text1": "Rights of data subjects under the GDPR: As a data subject, you have various rights under the GDPR, which are detailed in Articles 15 to 21 GDPR.",
+        "item1": {
+          "title": "Right to object",
+          "description": "You have the right, for reasons arising from your particular situation, to object at any time to the processing of personal data concerning you that is carried out on the basis of Art. 6 Para. 1 lit. e or f GDPR; this also applies to profiling based on these provisions. If the personal data concerning you is processed for direct marketing purposes, you have the right to object at any time to the processing of personal data concerning you for such marketing purposes; this also applies to profiling, insofar as it is associated with such direct marketing."
+        },
+        "item2": {
+          "title": "Right to withdraw consent",
+          "description": "You have the right to withdraw consent at any time."
+        },
+        "item3": {
+          "title": "Right of access",
+          "description": "You have the right to request confirmation as to whether data concerning you is being processed and to obtain information about this data, as well as additional information and a copy of the data in accordance with legal requirements."
+        },
+        "item4": {
+          "title": "Right to rectification",
+          "description": "You have the right, in accordance with the legal requirements, to request the completion of the data concerning you or the correction of incorrect data concerning you."
+        },
+        "item5": {
+          "title": "Right to erasure and restriction of processing",
+          "description": "In accordance with the legal requirements, you have the right to request that data concerning you be deleted without delay, or alternatively, to request a restriction of the processing of the data in accordance with the legal requirements."
+        },
+        "item6": {
+          "title": "Right to data portability",
+          "description": "You have the right to receive the data concerning you that you have provided to us, in a structured, commonly used, and machine-readable format, or to request its transfer to another controller, in accordance with the legal requirements."
+        },
+        "item7": {
+          "title": "Right to lodge a complaint with a supervisory authority",
+          "description": "You have the right to lodge a complaint with a supervisory authority, without prejudice to any other administrative or judicial remedy, in particular in the member state of your habitual residence, place of work, or place of the alleged infringement, if you believe that the processing of your personal data violates the provisions of the GDPR."
+        }
+      }
+    }
   }
-}
+

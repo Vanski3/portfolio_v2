@@ -1,6 +1,6 @@
 {
   "header": {
-    "home":"Home",
+    "home": "Home",
     "aboutMe": "Über mich",
     "skills": "Skills",
     "projects": "Projekte"
@@ -92,7 +92,7 @@
     "messagePlaceholder": "Hallo Vanessa, ich bin interessiert an...",
     "messageError": "Was möchtest du entwickeln?",
     "privacyLabel1": "Ich habe die",
-    "privacyLabel2":" Datenschutzerklärung",
+    "privacyLabel2": " Datenschutzerklärung",
     "privacyLabel3": " gelesen und stimme der Verarbeitung meiner Daten zu.",
     "privacyError": "Du musst der Datenschutzerklärung zustimmen.",
     "sayHello": "Say Hello",
@@ -108,8 +108,126 @@
   },
   "imprint": {
     "imprintTitle": "Impressum",
-    "address": "Vanessa Sachs<br />Gertrud-Kolmar-Str. 5 <br />10117 Berlin",
+    "personName": "Vanessa Sachs",
+    "address":" Gertrud-Kolmar-Str. 5",
+    "zip": "10117 Berlin",
     "contactTitle": "Kontakt",
-    "email": "E-Mail: contact&#64;vanessa-sachs.com"
+    "email": "E-Mail"
+  },
+  "privacy": {
+    "title": "Datenschutzerklärung",
+    "preamble": "Präambel",
+    "preambleText": "Mit der folgenden Datenschutzerklärung möchten wir Sie darüber aufklären, welche Arten Ihrer personenbezogenen Daten (nachfolgend auch kurz als \"Daten\" bezeichnet) wir zu welchen Zwecken und in welchem Umfang verarbeiten. Die Datenschutzerklärung gilt für alle von uns durchgeführten Verarbeitungen personenbezogener Daten, sowohl im Rahmen der Erbringung unserer Leistungen als auch insbesondere auf unseren Webseiten, in mobilen Applikationen sowie innerhalb externer Onlinepräsenzen, wie z. B. unserer Social-Media-Profile (nachfolgend zusammenfassend bezeichnet als \"Onlineangebot\").",
+    "genderNeutral": "Die verwendeten Begriffe sind nicht geschlechtsspezifisch.",
+    "lastUpdated": "Stand: 16. September 2024",
+    "contentOverview": "Inhaltsübersicht",
+    "responsible": {
+      "title": "Verantwortlicher",
+      "name": "Vanessa Sachs",
+      "street": "Gertrud-Kolmar-Straße 5",
+      "postalCode": "10117",
+      "city": "Berlin",
+      "country": "Deutschland"
+    },
+    "email": {
+      "label": "E-Mail-Adresse:"
+    },
+    "processingOverview": "Übersicht der Verarbeitungen",
+    "processingOverviewText": "Die nachfolgende Übersicht fasst die Arten der verarbeiteten Daten und die Zwecke ihrer Verarbeitung zusammen und verweist auf die betroffenen Personen.",
+    "dataTypes": {
+      "title": "Arten der verarbeiteten Daten",
+      "item1": "Bestandsdaten",
+      "item2": "Kontaktdaten",
+      "item3": "Inhaltsdaten",
+      "item4": "Nutzungsdaten",
+      "item5": "Meta-, Kommunikations- und Verfahrensdaten",
+      "item6": "Protokolldaten"
+    },
+    "dataSubjects": {
+      "title": "Kategorien betroffener Personen",
+      "item1": "Kommunikationspartner",
+      "item2": "Nutzer"
+    },
+    "purposes": {
+      "title": "Zwecke der Verarbeitung",
+      "item1": "Kommunikation",
+      "item2": "Sicherheitsmaßnahmen",
+      "item3": "Organisations- und Verwaltungsverfahren",
+      "item4": "Feedback",
+      "item5": "Bereitstellung unseres Onlineangebotes und Nutzerfreundlichkeit",
+      "item6": "Informationstechnische Infrastruktur"
+    },
+    "legalBasis": {
+      "title": "Maßgebliche Rechtsgrundlagen",
+      "text": "Maßgebliche Rechtsgrundlagen nach der DSGVO: Im Folgenden erhalten Sie eine Übersicht der Rechtsgrundlagen der DSGVO, auf deren Basis wir personenbezogene Daten verarbeiten. Bitte nehmen Sie zur Kenntnis, dass neben den Regelungen der DSGVO nationale Datenschutzvorgaben in Ihrem bzw. unserem Wohn- oder Sitzland gelten können. Sollten ferner im Einzelfall speziellere Rechtsgrundlagen maßgeblich sein, teilen wir Ihnen diese in der Datenschutzerklärung mit.",
+      "contract": {
+        "label": "Vertragserfüllung und vorvertragliche Anfragen (Art. 6 Abs. 1 S. 1 lit. b) DSGVO)",
+        "description": "Die Verarbeitung ist für die Erfüllung eines Vertrags, dessen Vertragspartei die betroffene Person ist, oder zur Durchführung vorvertraglicher Maßnahmen erforderlich, die auf Anfrage der betroffenen Person erfolgen."
+      },
+      "legitimateInterest": {
+        "label": "Berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f) DSGVO)",
+        "description": "Die Verarbeitung ist zur Wahrung der berechtigten Interessen des Verantwortlichen oder eines Dritten notwendig, vorausgesetzt, dass die Interessen, Grundrechte und Grundfreiheiten der betroffenen Person, die den Schutz personenbezogener Daten verlangen, nicht überwiegen."
+      },
+      "nationalLaws": {
+        "title": "Nationale Datenschutzregelungen in Deutschland",
+        "description": "Zusätzlich zu den Datenschutzregelungen der DSGVO gelten nationale Regelungen zum Datenschutz in Deutschland. Hierzu gehört insbesondere das Gesetz zum Schutz vor Missbrauch personenbezogener Daten bei der Datenverarbeitung (Bundesdatenschutzgesetz – BDSG). Das BDSG enthält insbesondere Spezialregelungen zum Recht auf Auskunft, zum Recht auf Löschung, zum Widerspruchsrecht, zur Verarbeitung besonderer Kategorien personenbezogener Daten, zur Verarbeitung für andere Zwecke und zur Übermittlung sowie automatisierten Entscheidungsfindung im Einzelfall einschließlich Profiling. Ferner können Landesdatenschutzgesetze der einzelnen Bundesländer zur Anwendung gelangen."
+      },
+      "swissLaw": {
+        "title": "Hinweis auf Geltung DSGVO und Schweizer DSG",
+        "description": "Diese Datenschutzhinweise dienen sowohl der Informationserteilung nach dem Schweizer DSG als auch nach der Datenschutzgrundverordnung (DSGVO). Aus diesem Grund bitten wir Sie zu beachten, dass aufgrund der breiteren räumlichen Anwendung und Verständlichkeit die Begriffe der DSGVO verwendet werden. Insbesondere statt der im Schweizer DSG verwendeten Begriffe „Bearbeitung\" von „Personendaten\", \"überwiegendes Interesse\" und \"besonders schützenswerte Personendaten\" werden die in der DSGVO verwendeten Begriffe „Verarbeitung\" von \"personenbezogenen Daten\" sowie \"berechtigtes Interesse\" und \"besondere Kategorien von Daten\" verwendet. Die gesetzliche Bedeutung der Begriffe wird jedoch im Rahmen der Geltung des Schweizer DSG weiterhin nach dem Schweizer DSG bestimmt."
+      }
+    },
+    "securityMeasures": {
+      "title": "Sicherheitsmaßnahmen",
+      "text1": "Wir treffen nach Maßgabe der gesetzlichen Vorgaben unter Berücksichtigung des Stands der Technik, der Implementierungskosten und der Art, des Umfangs, der Umstände und der Zwecke der Verarbeitung sowie der unterschiedlichen Eintrittswahrscheinlichkeiten und des Ausmaßes der Bedrohung der Rechte und Freiheiten natürlicher Personen geeignete technische und organisatorische Maßnahmen, um ein dem Risiko angemessenes Schutzniveau zu gewährleisten.",
+      "text2": "Zu den Maßnahmen gehören insbesondere die Sicherung der Vertraulichkeit, Integrität und Verfügbarkeit von Daten durch Kontrolle des physischen und elektronischen Zugangs zu den Daten als auch des sie betreffenden Zugriffs, der Eingabe, der Weitergabe, der Sicherung der Verfügbarkeit und ihrer Trennung. Des Weiteren haben wir Verfahren eingerichtet, die eine Wahrnehmung von Betroffenenrechten, die Löschung von Daten und Reaktionen auf die Gefährdung der Daten gewährleisten. Ferner berücksichtigen wir den Schutz personenbezogener Daten bereits bei der Entwicklung bzw. Auswahl von Hardware, Software sowie Verfahren entsprechend dem Prinzip des Datenschutzes, durch Technikgestaltung und durch datenschutzfreundliche Voreinstellungen."
+    },
+    "dataTransfers": {
+      "title": "Übermittlung von personenbezogenen Daten",
+      "text": "Im Rahmen unserer Verarbeitung von personenbezogenen Daten kommt es vor, dass diese an andere Stellen, Unternehmen, rechtlich selbstständige Organisationseinheiten oder Personen übermittelt beziehungsweise ihnen gegenüber offengelegt werden. Zu den Empfängern dieser Daten können z. B. mit IT-Aufgaben beauftragte Dienstleister gehören oder Anbieter von Diensten und Inhalten, die in eine Website eingebunden sind. In solchen Fällen beachten wir die gesetzlichen Vorgaben und schließen insbesondere entsprechende Verträge bzw. Vereinbarungen, die dem Schutz Ihrer Daten dienen, mit den Empfängern Ihrer Daten ab."
+    },
+    "internationalTransfers": {
+      "title": "Internationale Datentransfers",
+      "text1": "Datenverarbeitung in Drittländern: Sofern wir Daten in einem Drittland (d. h., außerhalb der Europäischen Union (EU), des Europäischen Wirtschaftsraums (EWR)) verarbeiten oder die Verarbeitung im Rahmen der Inanspruchnahme von Diensten Dritter oder der Offenlegung bzw. Übermittlung von Daten an andere Personen, Stellen oder Unternehmen stattfindet, erfolgt dies nur im Einklang mit den gesetzlichen Vorgaben.",
+      "text2": "Sofern das Datenschutzniveau in dem Drittland mittels eines Angemessenheitsbeschlusses anerkannt wurde (Art. 45 DSGVO), dient dieser als Grundlage des Datentransfers. Im Übrigen erfolgen Datentransfers nur dann, wenn das Datenschutzniveau anderweitig gesichert ist, insbesondere durch Standardvertragsklauseln (Art. 46 Abs. 2 lit. c) DSGVO), ausdrückliche Einwilligung oder im Fall vertraglicher oder gesetzlich erforderlicher Übermittlung (Art. 49 Abs. 1 DSGVO)."
+    },
+    "dataRetention": {
+      "title": "Allgemeine Informationen zur Datenspeicherung und Löschung",
+      "text1": "Wir löschen personenbezogene Daten, die wir verarbeiten, gemäß den gesetzlichen Bestimmungen, sobald die zugrundeliegenden Einwilligungen widerrufen werden oder keine weiteren rechtlichen Grundlagen für die Verarbeitung bestehen. Dies betrifft Fälle, in denen der ursprüngliche Verarbeitungszweck entfällt oder die Daten nicht mehr benötigt werden. Ausnahmen von dieser Regelung bestehen, wenn gesetzliche Pflichten oder besondere Interessen eine längere Aufbewahrung oder Archivierung der Daten erfordern.",
+      "text2": "Insbesondere müssen Daten, die aus handels- oder steuerrechtlichen Gründen aufbewahrt werden müssen oder deren Speicherung notwendig ist zur Rechtsverfolgung oder zum Schutz der Rechte anderer natürlicher oder juristischer Personen, entsprechend archiviert werden.",
+      "text3": "Unsere Datenschutzhinweise enthalten zusätzliche Informationen zur Aufbewahrung und Löschung von Daten, die speziell für bestimmte Verarbeitungsprozesse gelten."
+    },
+    "rights": {
+      "title": "Rechte der betroffenen Personen",
+      "text1": "Rechte der betroffenen Personen aus der DSGVO: Ihnen stehen als Betroffene nach der DSGVO verschiedene Rechte zu, die sich insbesondere aus Art. 15 bis 21 DSGVO ergeben.",
+      "item1": {
+        "title": "Widerspruchsrecht",
+        "description": "Sie haben das Recht, aus Gründen, die sich aus Ihrer besonderen Situation ergeben, jederzeit gegen die Verarbeitung der Sie betreffenden personenbezogenen Daten, die aufgrund von Art. 6 Abs. 1 lit. e oder f DSGVO erfolgt, Widerspruch einzulegen; dies gilt auch für ein auf diese Bestimmungen gestütztes Profiling. Werden die Sie betreffenden personenbezogenen Daten verarbeitet, um Direktwerbung zu betreiben, haben Sie das Recht, jederzeit Widerspruch gegen die Verarbeitung der Sie betreffenden personenbezogenen Daten zum Zwecke derartiger Werbung einzulegen; dies gilt auch für das Profiling, soweit es mit solcher Direktwerbung in Verbindung steht."
+      },
+      "item2": {
+        "title": "Widerrufsrecht bei Einwilligungen",
+        "description": "Sie haben das Recht, erteilte Einwilligungen jederzeit zu widerrufen."
+      },
+      "item3": {
+        "title": "Auskunftsrecht",
+        "description": "Sie haben das Recht, eine Bestätigung darüber zu verlangen, ob betreffende Daten verarbeitet werden und auf Auskunft über diese Daten sowie auf weitere Informationen und Kopie der Daten entsprechend den gesetzlichen Vorgaben."
+      },
+      "item4": {
+        "title": "Recht auf Berichtigung",
+        "description": "Sie haben entsprechend den gesetzlichen Vorgaben das Recht, die Vervollständigung der Sie betreffenden Daten oder die Berichtigung der Sie betreffenden unrichtigen Daten zu verlangen."
+      },
+      "item5": {
+        "title": "Recht auf Löschung und Einschränkung der Verarbeitung",
+        "description": "Sie haben nach Maßgabe der gesetzlichen Vorgaben das Recht, zu verlangen, dass Sie betreffende Daten unverzüglich gelöscht werden, bzw. alternativ nach Maßgabe der gesetzlichen Vorgaben eine Einschränkung der Verarbeitung der Daten zu verlangen."
+      },
+      "item6": {
+        "title": "Recht auf Datenübertragbarkeit",
+        "description": "Sie haben das Recht, Sie betreffende Daten, die Sie uns bereitgestellt haben, nach Maßgabe der gesetzlichen Vorgaben in einem strukturierten, gängigen und maschinenlesbaren Format zu erhalten oder deren Übermittlung an einen anderen Verantwortlichen zu fordern."
+      },
+      "item7": {
+        "title": "Beschwerde bei Aufsichtsbehörde",
+        "description": "Sie haben unbeschadet eines anderweitigen verwaltungsrechtlichen oder gerichtlichen Rechtsbehelfs das Recht auf Beschwerde bei einer Aufsichtsbehörde, insbesondere in dem Mitgliedstaat ihres gewöhnlichen Aufenthaltsorts, ihres Arbeitsplatzes oder des Orts des mutmaßlichen Verstoßes, wenn Sie der Ansicht sind, dass die Verarbeitung der Sie betreffenden personenbezogenen Daten gegen die Vorgaben der DSGVO verstößt."
+      }
+    }
   }
 }
