@@ -69,17 +69,25 @@ $karla-ft: 'Karla';
           border-bottom: 1px solid $accent-clr;
           color: $font-color;
           font-size: 1rem;
-
+        
           &::placeholder {
             font-family: $karla-ft;
           }
         }
-
+        
         textarea {
           height: 100px;
           resize: none;
+          font-family: $karla-ft;
         }
-
+        
+        input:focus,
+        textarea:focus {
+          background: #1c1c1c;
+          border-bottom: 2px solid $accent-clr;
+          outline: none;
+        }
+        
         label img.form-icon {
           position: absolute;
           right: 27px;

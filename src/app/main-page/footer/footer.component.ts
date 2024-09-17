@@ -17,7 +17,15 @@ export class FooterComponent implements OnInit {
   ngOnInit() {
     this.router.events.subscribe(event => {
       if (event instanceof NavigationEnd) {
-        window.scrollTo(0, 0); 
+         // Check if the URL has a fragment (e.g., #contact, #imprint)
+        const urlFragment = this.router.url.split('#')[1]; 
+        
+         // Scroll to the top only if no fragment is used
+        if (!urlFragment) {
+          setTimeout(() => {
+            window.scrollTo(0, 0);
+          }, 100); 
+        }
       }
     });
   }
